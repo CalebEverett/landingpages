@@ -1,0 +1,43 @@
+.columns {
+	
+	@include breakpoint($medium){
+		@include container;
+		@include clearfix;
+		margin-left: 5%;
+	
+		ul{
+			li {
+			@include gallery(6 of 12);
+			}//li
+		}//ul
+	}//breakpoint
+}//columns
+
+
+.testimonial {
+	margin-top: 1.5em;
+
+	p {
+	width: $testImgSize;
+	text-align: center;
+	font-size: 105%;
+	font-style: italic;
+	margin: auto;
+	}
+}
+
+.testimage {
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+#hayley {
+	@include testImage('../images/hayley.jpg');
+	height: $testImgSize;
+}
+
+#victoria {
+	@include testImage('../images/victoria.jpg');
+	height: $testImgSize;
+}

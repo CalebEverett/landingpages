@@ -1,0 +1,53 @@
+body {
+  font: $mainFont;
+  background: $backgroundColor;
+  color: $typeDefault;
+}
+
+h1 {
+ font: $headFont;
+ color: $headColor;
+ text-align: center;
+}
+
+h2 {
+ font: $headFont2;
+ color: $headColor2;
+ margin-top: 1.5em;
+ margin-bottom: 0.25;
+ text-align: center;
+
+}
+
+#{headings(3,4)} {
+ font: $headFont;
+ color: $headColor;
+ font-size: 1.0em;
+ text-align: center;
+}
+
+strong {
+  font-weight: $thin;
+}
+
+p {
+  padding: 10px 0;
+  line-height: 135%;
+  text-align: justify;
+}
+
+sup {
+  font-size: 60%;
+  vertical-align: top;
+  line-height: 150%;
+}
+
+ul {
+	padding-bottom: 10px;
+	
+}
+
+li {
+	list-style: square;
+	margin-left: 5%;
+}

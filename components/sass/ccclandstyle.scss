@@ -1,0 +1,65 @@
+/* testing
+[hubspot-metadata]
+{
+"category":	"asset",
+"creatable": false,
+"path": "custom/page/cccland/ccclandstye.css",
+"id": 	2406644233
+}
+[end-hubspot-metadata]
+*/
+
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+
+/* These includes are optional, but helpful. 
+{% include "hubspot/styles/responsive/required_base.css" %}
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+*/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+// ccclandstyle.scss
+// ==============
+ 
+//Compass imports
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import 'compass/css3/filter';
+@import "compass/css3/flexbox";
+@import "compass/css3/transition";
+
+//External Libraries
+@import "susy";
+@import "breakpoint";
+
+//Core Partial
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+
+//Import Modules
+@import "modules/intro";
+@import "modules/forms";
+@import "modules/nav";
+@import "modules/main";
+@import "modules/footer";
+@import "modules/accreditations";
+
+//Import Modal
+@import "modal/modal";
+

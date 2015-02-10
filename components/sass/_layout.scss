@@ -1,0 +1,45 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  main {
+  @include clearfix;
+  @include container(70em);
+
+	  article {
+	  	padding: 1em;
+	 	
+	 	@include breakpoint($medium){
+	    	@include span(8 of 12);
+	    }
+
+	  } //article
+
+	  aside {
+      @include clearfix;
+      @include breakpoint($medium){
+       @include span(4 of 12 at 9);
+	    }
+    }//aside
+
+
+  }
+
+}
+  
+.hide {
+        display: none;
+
+        @include breakpoint($medium){
+              display: inline;      
+        }
+    }
+
+.show {
+        display: block;
+
+        @include breakpoint($medium){
+              display: none;      
+        }
+    }

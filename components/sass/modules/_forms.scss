@@ -1,0 +1,190 @@
+/* ==========================================================================
+   Forms
+========================================================================== */
+
+
+/* All Global Forms
+========================================================================== */
+
+/* Form Field */
+body .hs-form-field {
+	padding: 0.3em 5%;
+}
+
+/* Descriptions */
+body .hs-field-desc {
+	font: $mainFont;
+}
+
+/* Labels */
+body label {}
+body .hs-form-field > label {
+	font: $formLabel;
+  color: $light;
+}
+
+form {
+    background-color: lighten($blue, 5);
+}
+
+/* One Line Inputs */
+body input[type="text"],
+body input[type="password"],
+body input[type="datetime"],
+body input[type="datetime-local"],
+body input[type="date"],
+body input[type="month"],
+body input[type="time"],
+body input[type="week"],
+body input[type="number"],
+body input[type="email"],
+body input[type="url"],
+body input[type="search"],
+body input[type="tel"],
+body input[type="color"],
+body input[type="file"],
+body textarea,
+body select {
+  width: 100%;
+  font: $mainFont;
+  line-height: 1.25;
+  border: none;
+}
+
+body input[type="text"]:focus,
+body input[type="password"]:focus,
+body input[type="datetime"]:focus,
+body input[type="datetime-local"]:focus,
+body input[type="date"]:focus,
+body input[type="month"]:focus,
+body input[type="time"]:focus,
+body input[type="week"]:focus,
+body input[type="number"]:focus,
+body input[type="email"]:focus,
+body input[type="url"]:focus,
+body input[type="search"]:focus,
+body input[type="tel"]:focus,
+body input[type="color"]:focus,
+body input[type="file"]:focus,
+body textarea:focus,
+body select:focus {}
+
+/* Separate Styles for Multiple Line Inputs */
+body textarea {}
+body textarea:focus {}
+
+/* Separate Styles for Drop Downs */
+body select {}
+body select:focus {}
+
+/* Multiple Selection Inputs */
+body form.hs-form .hs-form-field ul.inputs-list {
+  list-style: none;
+  padding: 0;
+}
+body form.hs-form .hs-form-field ul.inputs-list li input {}
+body input[type="radio"] {}
+body input[type="checkbox"] {}
+
+/* Required */
+body input:focus:required:invalid,
+body textarea:focus:required:invalid,
+body select:focus:required:invalid {}
+
+body input:focus:required:invalid:focus,
+body textarea:focus:required:invalid:focus,
+body select:focus:required:invalid:focus {}
+
+/* Placeholder Text */
+::-webkit-input-placeholder { /* Webkit Browsers */
+   color: #555;
+   opacity: 1;
+ }
+ :-moz-placeholder { /* Firefox 18- */
+   color: #555;
+   opacity: 1;
+ }
+ ::-moz-placeholder { /* Firefox 19+ */
+   color: #555;
+   opacity: 1;
+ }
+ :-ms-input-placeholder { /* IE10 */
+   color: #555;
+   opacity: 1;
+ }
+
+
+#formaside {
+  padding-top: 1.5em;
+  }
+
+.actions {
+        text-align: center;
+        margin: 0 auto;
+        padding: 5%;
+}
+  
+
+/* Button Styles */
+
+.hs-button {
+  @include button($orange);
+}
+
+.inline-button {
+  @include button($orange);
+  margin: 25px auto;
+  width: 175px;
+}
+
+
+.checks {
+  font-size: 90%;
+  padding-left: 0.5em;
+  color: $light;
+}
+
+//Modal tweaks
+
+.chk-questions {
+  background-color: lighten($blue, 5);
+  padding: 2% 5%;
+  line-height: 125%;
+}
+
+.form-header{
+
+h2 {
+  color: $light;
+  text-align: center;
+  background-color: $orange;
+  margin-top: 0em;
+  padding: 0.5em;
+  font-weight: $normal;
+  }
+
+}//form-header
+
+  #privacy {
+  background-color: lighten($blue, 5);
+  text-align: center;
+  color: $light;
+  font-size: 80%;
+  display: block;
+  padding-bottom: .25em;
+
+  }
+
+.modal-content{
+  
+p {
+  width: 95%;
+  margin: 0 auto;
+  }
+
+li {
+  margin-left: 25px;
+}
+
+}
+

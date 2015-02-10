@@ -1,0 +1,683 @@
+/*
+[hubspot-metadata]
+{
+"category":	"asset",
+"creatable": false,
+"path": "custom/page/cccland/ccclandstye.css",
+"id": 	2406644233
+}
+[end-hubspot-metadata]
+*/
+/* @import url('http://example.com/example_style.css'); */
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+/* These includes are optional, but helpful. 
+{% include "hubspot/styles/responsive/required_base.css" %}
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+*/
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../../../components/sass/_base.scss */
+body {
+  font: 400 1em/1.5em "Roboto", sans-serif;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* line 7, ../../../components/sass/_base.scss */
+h1 {
+  font: 400 1em/1.5em "Slabo 27px", serif;
+  color: #F69627;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+/* line 14, ../../../components/sass/_base.scss */
+h2 {
+  font: 300 1.5em/1.5em "Roboto", sans-serif;
+  color: #51a3ef;
+  font-size: 1.8em;
+}
+
+/* line 20, ../../../components/sass/_base.scss */
+h3, h4 {
+  font: 400 1em/1.5em "Slabo 27px", serif;
+  color: #51a3ef;
+}
+
+/* line 25, ../../../components/sass/_base.scss */
+strong {
+  font-weight: 300;
+}
+
+/* line 29, ../../../components/sass/_base.scss */
+p {
+  font-weight: 300;
+  padding-bottom: 10px;
+  line-height: 150%;
+  font-size: 150%;
+}
+
+/* line 36, ../../../components/sass/_base.scss */
+sup {
+  font-size: 60%;
+  vertical-align: top;
+  line-height: 150%;
+}
+
+/* line 42, ../../../components/sass/_base.scss */
+.chartnote {
+  font-size: 90%;
+  padding: 10px 25px;
+}
+
+/* line 1, ../../../components/sass/_layout.scss */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 9, ../../../components/sass/_layout.scss */
+#wrapper article {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0px 10px;
+}
+/* line 12, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#wrapper article:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 15, ../../../components/sass/_layout.scss */
+#wrapper article ul li {
+  font-weight: 300;
+  list-style: square;
+  margin-left: 5%;
+  line-height: 125%;
+  margin-bottom: 5px;
+  font-size: 135%;
+}
+
+/* line 1, ../../../components/sass/modules/_intro.scss */
+.no-js #loader {
+  display: none;
+}
+
+/* line 2, ../../../components/sass/modules/_intro.scss */
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+/* line 4, ../../../components/sass/modules/_intro.scss */
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../images/misc/loading.gif") center no-repeat #fff;
+}
+
+/* line 15, ../../../components/sass/modules/_intro.scss */
+header .fullheight {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000), url("../images/school/graduation.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 24, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup {
+  padding: 25px 0;
+}
+/* line 27, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup h1 {
+  color: #FFFFFF;
+  font-size: 3em;
+  line-height: .8em;
+  text-align: center;
+}
+/* line 36, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup h2 {
+  color: #FFFFFF;
+  display: block;
+  font-family: "Slabo 27px", serif;
+  font-size: 1.5em;
+  line-height: 120%;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 0px;
+  padding: 10px;
+  text-align: center;
+  text-shadow: #000000 0 0 40px;
+}
+@media (min-width: 960px) {
+  /* line 36, ../../../components/sass/modules/_intro.scss */
+  header .fullheight .hgroup h2 {
+    width: 70%;
+    font-size: 2.2em;
+  }
+}
+/* line 57, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup img#player {
+  display: block;
+  max-width: 25px;
+  cursor: pointer;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+@media (min-width: 960px) {
+  /* line 57, ../../../components/sass/modules/_intro.scss */
+  header .fullheight .hgroup img#player {
+    max-width: 30px;
+  }
+}
+/* line 69, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup p {
+  text-align: center;
+  font-size: 1.1em;
+  color: #FFFFFF;
+  padding: 5px 0;
+  width: 80%;
+  margin: 0 auto;
+  text-shadow: #000000 0 0 40px;
+}
+/* line 64, ../../../components/sass/_mixins.scss */
+header .fullheight .hgroup p:before, header .fullheight .hgroup p:after {
+  content: '';
+  display: table;
+}
+/* line 69, ../../../components/sass/_mixins.scss */
+header .fullheight .hgroup p:after {
+  clear: both;
+}
+/* line 78, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup p img {
+  max-width: 35px;
+  cursor: pointer;
+}
+@media (min-width: 960px) {
+  /* line 69, ../../../components/sass/modules/_intro.scss */
+  header .fullheight .hgroup p {
+    width: 70%;
+    font-size: 1.3em;
+  }
+  /* line 86, ../../../components/sass/modules/_intro.scss */
+  header .fullheight .hgroup p img {
+    max-width: 55px;
+  }
+}
+
+/* line 1, ../../../components/sass/modules/_nav.scss */
+header #nav {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyOGFlYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzEyNzBjOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #228aeb), color-stop(100%, #1270c8));
+  background-image: -moz-linear-gradient(top, #228aeb, #1270c8);
+  background-image: -webkit-linear-gradient(top, #228aeb, #1270c8);
+  background-image: linear-gradient(to bottom, #228aeb, #1270c8);
+  width: 100%;
+  z-index: 100;
+}
+/* line 64, ../../../components/sass/_mixins.scss */
+header #nav:before, header #nav:after {
+  content: '';
+  display: table;
+}
+/* line 69, ../../../components/sass/_mixins.scss */
+header #nav:after {
+  clear: both;
+}
+/* line 7, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+header #nav .navbar:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 9, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar .brand {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  float: left;
+  text-align: center;
+  background: #F69627;
+}
+/* line 14, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar .brand a {
+  color: #FFFFFF;
+  font-family: "Slabo 27px", serif;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  font-size: 2.5em;
+}
+@media (max-width: 650px) {
+  /* line 14, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar .brand a {
+    font-size: 1.5em;
+  }
+  /* line 25, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar .brand a span {
+    display: none;
+  }
+}
+/* line 30, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 32, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li {
+  float: left;
+}
+/* line 34, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a {
+  color: #FFFFFF;
+  font: 400 1em/1.5em "Roboto", sans-serif;
+  font-size: 1em;
+  display: inline-block;
+  padding: 10px 10px 10px 45px;
+  text-decoration: none;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 2px;
+}
+/* line 47, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.problem {
+  background-image: url("../images/icons/warning.png");
+}
+/* line 48, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.solution {
+  background-image: url("../images/icons/bulb.png");
+}
+/* line 49, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.plan {
+  background-image: url("../images/icons/plan.png");
+}
+/* line 50, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.team {
+  background-image: url("../images/icons/team.png");
+}
+/* line 51, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.references {
+  background-image: url("../images/icons/info.png");
+}
+/* line 53, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a:hover {
+  background-color: #F69627;
+}
+@media (min-width: 0) and (max-width: 650px) {
+  /* line 34, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a {
+    padding: 10px 18px;
+  }
+  /* line 60, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a::after {
+    content: '\000a0';
+    display: block;
+  }
+  /* line 64, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a span {
+    display: none;
+  }
+}
+@media (min-width: 650px) and (max-width: 960px) {
+  /* line 34, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a {
+    padding-left: 10px;
+  }
+  /* line 70, ../../../components/sass/modules/_nav.scss */
+  header #nav .navbar ul li a.icon {
+    background-image: none;
+  }
+}
+/* line 73, ../../../components/sass/modules/_nav.scss */
+header #nav .navbar ul li a.active {
+  background-color: #F69627;
+  color: #FFFFFF;
+}
+
+/* line 1, ../../../components/sass/modules/_welcome.scss */
+#welcome {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 12, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#welcome:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 8, ../../../components/sass/modules/_welcome.scss */
+#welcome h1, #welcome h2, #welcome h3, #welcome h4, #welcome h5, #welcome h6 {
+  text-align: center;
+}
+/* line 12, ../../../components/sass/modules/_welcome.scss */
+#welcome h1 {
+  font-size: 4em;
+}
+@media (min-width: 960px) {
+  /* line 12, ../../../components/sass/modules/_welcome.scss */
+  #welcome h1 {
+    font-size: 7em;
+  }
+}
+/* line 19, ../../../components/sass/modules/_welcome.scss */
+#welcome h2 {
+  font-size: 1.8em;
+}
+@media (min-width: 960px) {
+  /* line 19, ../../../components/sass/modules/_welcome.scss */
+  #welcome h2 {
+    font-size: 3em;
+  }
+}
+/* line 26, ../../../components/sass/modules/_welcome.scss */
+#welcome p {
+  text-align: center;
+}
+/* line 28, ../../../components/sass/modules/_welcome.scss */
+#welcome p img {
+  padding-top: 10x;
+  max-width: 55px;
+}
+@media (min-width: 960px) {
+  /* line 28, ../../../components/sass/modules/_welcome.scss */
+  #welcome p img {
+    padding-top: 30px;
+    max-width: 75px;
+  }
+}
+
+/* line 3, ../../../components/sass/modules/_theproblem.scss */
+#theproblem div#students {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/school/students.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 25px 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* line 64, ../../../components/sass/_mixins.scss */
+#theproblem section.twocharts:before, #theproblem section.twocharts:after {
+  content: '';
+  display: table;
+}
+/* line 69, ../../../components/sass/_mixins.scss */
+#theproblem section.twocharts:after {
+  clear: both;
+}
+@media (min-width: 960px) {
+  /* line 19, ../../../components/sass/modules/_theproblem.scss */
+  #theproblem section.twocharts section.chart {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: inline;
+  }
+  /* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  #theproblem section.twocharts section.chart:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+  }
+  /* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  #theproblem section.twocharts section.chart:nth-child(2n + 2) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+/* line 26, ../../../components/sass/modules/_theproblem.scss */
+#theproblem section.twocharts h2.charttitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 125%;
+  padding: 5px 0;
+  line-height: 110%;
+}
+/* line 64, ../../../components/sass/_mixins.scss */
+#theproblem section.onechart:before, #theproblem section.onechart:after {
+  content: '';
+  display: table;
+}
+/* line 69, ../../../components/sass/_mixins.scss */
+#theproblem section.onechart:after {
+  clear: both;
+}
+@media (min-width: 960px) {
+  /* line 35, ../../../components/sass/modules/_theproblem.scss */
+  #theproblem section.onechart {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  #theproblem section.onechart:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 42, ../../../components/sass/modules/_theproblem.scss */
+#theproblem section.onechart
+h2.charttitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 125%;
+  padding: 5px 0;
+  line-height: 110%;
+}
+/* line 52, ../../../components/sass/modules/_theproblem.scss */
+#theproblem h3.chartsubtitle {
+  color: #000000;
+  font: 400 1em/1.5em "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 110%;
+  padding: 10px 0;
+  line-height: 110%;
+}
+
+/* line 3, ../../../components/sass/modules/_thesolution.scss */
+#thesolution button {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*border is optional*/
+  cursor: pointer;
+  font: 400 1em/1.5em "Roboto", sans-serif;
+  font-size: 85%;
+  color: -webkit-link;
+}
+/* line 14, ../../../components/sass/modules/_thesolution.scss */
+#thesolution ul {
+  display: none;
+}
+/* line 18, ../../../components/sass/modules/_thesolution.scss */
+#thesolution section#modelchart {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/misc/elevatemodel.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  height: 600px;
+}
+
+/* line 2, ../../../components/sass/modules/_references.scss */
+#references p {
+  line-height: 125%;
+  font-size: 135%;
+  padding: 0px 0px 20px 5px;
+  text-indent: -12px;
+}
+
+/* line 1, ../../../components/sass/modules/_footer.scss */
+footer {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #333333;
+  padding: 30px 0;
+}
+/* line 12, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+footer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 5, ../../../components/sass/modules/_footer.scss */
+footer #socialmedia {
+  text-align: center;
+}
+/* line 7, ../../../components/sass/modules/_footer.scss */
+footer #socialmedia ul {
+  list-style: none;
+}
+/* line 9, ../../../components/sass/modules/_footer.scss */
+footer #socialmedia ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+/* line 12, ../../../components/sass/modules/_footer.scss */
+footer #socialmedia ul li img {
+  width: 30px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}

@@ -1,0 +1,1257 @@
+/*
+[hubspot-metadata]
+{
+"category":	"asset",
+"creatable": false,
+"path": "custom/page/cccland/ccclandstye.css",
+"id": 	2406644233
+}
+[end-hubspot-metadata]
+*/
+/* @import url('http://example.com/example_style.css'); */
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+/****************************************/
+/* HubSpot Style Boilerplate            */
+/****************************************/
+/* These includes are optional, but helpful. 
+{% include "hubspot/styles/responsive/required_base.css" %}
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
+*/
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, ../../../components/sass/_base.scss */
+body {
+  font: 300 1.25em/1.25em "Roboto", sans-serif;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/* line 7, ../../../components/sass/_base.scss */
+h1 {
+  font: 300 2em/1.3em "Slabo 27px", serif;
+  color: #F69627;
+  text-align: center;
+}
+
+/* line 13, ../../../components/sass/_base.scss */
+h2 {
+  font: 300 1.5em/1.2em "Roboto", sans-serif;
+  color: #1270C8;
+  margin-top: 1.5em;
+  margin-bottom: 0.25;
+  text-align: center;
+}
+
+/* line 22, ../../../components/sass/_base.scss */
+h3, h4 {
+  font: 300 2em/1.3em "Slabo 27px", serif;
+  color: #F69627;
+  font-size: 1.0em;
+  text-align: center;
+}
+
+/* line 29, ../../../components/sass/_base.scss */
+strong {
+  font-weight: 300;
+}
+
+/* line 33, ../../../components/sass/_base.scss */
+p {
+  padding: 10px 0;
+  line-height: 135%;
+  text-align: justify;
+}
+
+/* line 39, ../../../components/sass/_base.scss */
+sup {
+  font-size: 60%;
+  vertical-align: top;
+  line-height: 150%;
+}
+
+/* line 45, ../../../components/sass/_base.scss */
+ul {
+  padding-bottom: 10px;
+}
+
+/* line 50, ../../../components/sass/_base.scss */
+li {
+  list-style: square;
+  margin-left: 5%;
+}
+
+/* line 1, ../../../components/sass/_layout.scss */
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 6, ../../../components/sass/_layout.scss */
+body main {
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 46, ../../../components/sass/_mixins.scss */
+body main:before, body main:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+body main:after {
+  clear: both;
+}
+/* line 12, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+body main:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 10, ../../../components/sass/_layout.scss */
+body main article {
+  padding: 1em;
+}
+@media (min-width: 960px) {
+  /* line 10, ../../../components/sass/_layout.scss */
+  body main article {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 46, ../../../components/sass/_mixins.scss */
+body main aside:before, body main aside:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+body main aside:after {
+  clear: both;
+}
+@media (min-width: 960px) {
+  /* line 19, ../../../components/sass/_layout.scss */
+  body main aside {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/* line 31, ../../../components/sass/_layout.scss */
+.hide {
+  display: none;
+}
+@media (min-width: 960px) {
+  /* line 31, ../../../components/sass/_layout.scss */
+  .hide {
+    display: inline;
+  }
+}
+
+/* line 39, ../../../components/sass/_layout.scss */
+.show {
+  display: block;
+}
+@media (min-width: 960px) {
+  /* line 39, ../../../components/sass/_layout.scss */
+  .show {
+    display: none;
+  }
+}
+
+/* line 2, ../../../components/sass/modules/_intro.scss */
+header .fullheight {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/JosephHero.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+@media (min-width: 600px) {
+  /* line 2, ../../../components/sass/modules/_intro.scss */
+  header .fullheight {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+}
+/* line 17, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup {
+  padding: 5%;
+  padding-bottom: 1%;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjciLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC43Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.7)), color-stop(100%, rgba(255, 255, 255, 0.7)));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  width: 100%;
+}
+@media (min-width: 600px) {
+  /* line 17, ../../../components/sass/modules/_intro.scss */
+  header .fullheight .hgroup {
+    width: auto;
+    background-image: none;
+  }
+}
+/* line 28, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup h1 {
+  color: #F69627;
+  text-align: left;
+  line-height: 0.8;
+  margin: 0 auto;
+  font-size: 2em;
+}
+@media (min-width: 960px) {
+  /* line 28, ../../../components/sass/modules/_intro.scss */
+  header .fullheight .hgroup h1 {
+    font-size: 5em;
+  }
+}
+/* line 41, ../../../components/sass/modules/_intro.scss */
+header .fullheight .hgroup h2 {
+  color: #1270C8;
+  font-family: "Slabo 27px", serif;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 3em;
+}
+@media (min-width: 960px) {
+  /* line 41, ../../../components/sass/modules/_intro.scss */
+  header .fullheight .hgroup h2 {
+    font-size: 7em;
+  }
+}
+
+/* ==========================================================================
+   Forms
+========================================================================== */
+/* All Global Forms
+========================================================================== */
+/* Form Field */
+/* line 10, ../../../components/sass/modules/_forms.scss */
+body .hs-form-field {
+  padding: 0.3em 5%;
+}
+
+/* Descriptions */
+/* line 15, ../../../components/sass/modules/_forms.scss */
+body .hs-field-desc {
+  font: 300 1.25em/1.25em "Roboto", sans-serif;
+}
+
+/* Labels */
+/* line 21, ../../../components/sass/modules/_forms.scss */
+body .hs-form-field > label {
+  font: 300 1em/1.5em "Roboto", sans-serif;
+  color: #FFFFFF;
+}
+
+/* line 26, ../../../components/sass/modules/_forms.scss */
+form {
+  background-color: #147ddf;
+}
+
+/* One Line Inputs */
+/* line 31, ../../../components/sass/modules/_forms.scss */
+body input[type="text"],
+body input[type="password"],
+body input[type="datetime"],
+body input[type="datetime-local"],
+body input[type="date"],
+body input[type="month"],
+body input[type="time"],
+body input[type="week"],
+body input[type="number"],
+body input[type="email"],
+body input[type="url"],
+body input[type="search"],
+body input[type="tel"],
+body input[type="color"],
+body input[type="file"],
+body textarea,
+body select {
+  width: 100%;
+  font: 300 1.25em/1.25em "Roboto", sans-serif;
+  line-height: 1.25;
+  border: none;
+}
+
+/* Separate Styles for Multiple Line Inputs */
+/* Separate Styles for Drop Downs */
+/* Multiple Selection Inputs */
+/* line 81, ../../../components/sass/modules/_forms.scss */
+body form.hs-form .hs-form-field ul.inputs-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Required */
+/* Placeholder Text */
+/* line 99, ../../../components/sass/modules/_forms.scss */
+::-webkit-input-placeholder {
+  /* Webkit Browsers */
+  color: #555;
+  opacity: 1;
+}
+
+/* line 103, ../../../components/sass/modules/_forms.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #555;
+  opacity: 1;
+}
+
+/* line 107, ../../../components/sass/modules/_forms.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #555;
+  opacity: 1;
+}
+
+/* line 111, ../../../components/sass/modules/_forms.scss */
+:-ms-input-placeholder {
+  /* IE10 */
+  color: #555;
+  opacity: 1;
+}
+
+/* line 117, ../../../components/sass/modules/_forms.scss */
+#formaside {
+  padding-top: 1.5em;
+}
+
+/* line 121, ../../../components/sass/modules/_forms.scss */
+.actions {
+  text-align: center;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+/* Button Styles */
+/* line 130, ../../../components/sass/modules/_forms.scss */
+.hs-button {
+  display: block;
+  border: none;
+  font: 300 1.25em/1.25em "Roboto", sans-serif;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 100%;
+  height: 90%;
+  margin: 0.2em 0;
+  padding: 0.2em;
+  text-align: center;
+  background-color: #F69627;
+}
+/* line 46, ../../../components/sass/_mixins.scss */
+.hs-button:before, .hs-button:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+.hs-button:after {
+  clear: both;
+}
+/* line 80, ../../../components/sass/_mixins.scss */
+.hs-button:hover {
+  cursor: pointer;
+}
+/* line 62, ../../../components/sass/_mixins.scss */
+.hs-button:hover {
+  background-color: #f7a23f;
+}
+
+/* line 134, ../../../components/sass/modules/_forms.scss */
+.inline-button {
+  display: block;
+  border: none;
+  font: 300 1.25em/1.25em "Roboto", sans-serif;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #FFFFFF;
+  width: 100%;
+  height: 90%;
+  margin: 0.2em 0;
+  padding: 0.2em;
+  text-align: center;
+  background-color: #F69627;
+  margin: 25px auto;
+  width: 175px;
+}
+/* line 46, ../../../components/sass/_mixins.scss */
+.inline-button:before, .inline-button:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+.inline-button:after {
+  clear: both;
+}
+/* line 80, ../../../components/sass/_mixins.scss */
+.inline-button:hover {
+  cursor: pointer;
+}
+/* line 62, ../../../components/sass/_mixins.scss */
+.inline-button:hover {
+  background-color: #f7a23f;
+}
+
+/* line 141, ../../../components/sass/modules/_forms.scss */
+.checks {
+  font-size: 90%;
+  padding-left: 0.5em;
+  color: #FFFFFF;
+}
+
+/* line 149, ../../../components/sass/modules/_forms.scss */
+.chk-questions {
+  background-color: #147ddf;
+  padding: 2% 5%;
+  line-height: 125%;
+}
+
+/* line 157, ../../../components/sass/modules/_forms.scss */
+.form-header h2 {
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #F69627;
+  margin-top: 0em;
+  padding: 0.5em;
+  font-weight: 400;
+}
+
+/* line 168, ../../../components/sass/modules/_forms.scss */
+#privacy {
+  background-color: #147ddf;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 80%;
+  display: block;
+  padding-bottom: .25em;
+}
+
+/* line 180, ../../../components/sass/modules/_forms.scss */
+.modal-content p {
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 185, ../../../components/sass/modules/_forms.scss */
+.modal-content li {
+  margin-left: 25px;
+}
+
+/* line 1, ../../../components/sass/modules/_nav.scss */
+#nav {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIyOGFlYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzEyNzBjOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #228aeb), color-stop(100%, #1270c8));
+  background-image: -moz-linear-gradient(top, #228aeb, #1270c8);
+  background-image: -webkit-linear-gradient(top, #228aeb, #1270c8);
+  background-image: linear-gradient(to bottom, #228aeb, #1270c8);
+  width: 100%;
+  z-index: 100;
+}
+/* line 7, ../../../components/sass/modules/_nav.scss */
+#nav .navcontent {
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 46, ../../../components/sass/_mixins.scss */
+#nav .navcontent:before, #nav .navcontent:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+#nav .navcontent:after {
+  clear: both;
+}
+/* line 12, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+#nav .navcontent:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 14, ../../../components/sass/modules/_nav.scss */
+#nav .navitemone {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 41.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 17, ../../../components/sass/modules/_nav.scss */
+#nav .navitemone .logo {
+  height: 80px;
+  fill: #FFFFFF;
+}
+/* line 26, ../../../components/sass/modules/_nav.scss */
+#nav .navitemtwo {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 58.33333%;
+  float: right;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  -webkit-align-content: center;
+  align-content: center;
+}
+/* line 30, ../../../components/sass/modules/_nav.scss */
+#nav .navitemtwo a {
+  text-decoration: none;
+}
+/* line 33, ../../../components/sass/modules/_nav.scss */
+#nav .navitemtwo a h2 {
+  font-size: 1.4em;
+  margin-top: 0;
+  color: #FFFFFF;
+  text-align: right;
+  margin-top: 0.3em;
+}
+@media (min-width: 960px) {
+  /* line 33, ../../../components/sass/modules/_nav.scss */
+  #nav .navitemtwo a h2 {
+    font-size: 2.2em;
+    margin: .4em 0;
+  }
+}
+/* line 51, ../../../components/sass/modules/_nav.scss */
+#nav .navitemthree {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 41.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+
+@media (min-width: 960px) {
+  /* line 1, ../../../components/sass/modules/_main.scss */
+  .columns {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 5%;
+  }
+  /* line 12, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+  .columns:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 46, ../../../components/sass/_mixins.scss */
+  .columns:before, .columns:after {
+    content: '';
+    display: table;
+  }
+  /* line 51, ../../../components/sass/_mixins.scss */
+  .columns:after {
+    clear: both;
+  }
+  /* line 9, ../../../components/sass/modules/_main.scss */
+  .columns ul li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .columns ul li:nth-child(2n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+  }
+  /* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+  .columns ul li:nth-child(2n + 2) {
+    margin-left: 50%;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/* line 17, ../../../components/sass/modules/_main.scss */
+.testimonial {
+  margin-top: 1.5em;
+}
+/* line 20, ../../../components/sass/modules/_main.scss */
+.testimonial p {
+  width: 200px;
+  text-align: center;
+  font-size: 105%;
+  font-style: italic;
+  margin: auto;
+}
+
+/* line 29, ../../../components/sass/modules/_main.scss */
+.testimage {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 35, ../../../components/sass/modules/_main.scss */
+#hayley {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hayley.jpg");
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+/* line 40, ../../../components/sass/modules/_main.scss */
+#victoria {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/victoria.jpg");
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+/* line 1, ../../../components/sass/modules/_footer.scss */
+footer {
+  width: 100%;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzEyNzBjOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzBhM2M2YSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #1270c8), color-stop(100%, #0a3c6a));
+  background-image: -moz-linear-gradient(top, #1270c8, #0a3c6a);
+  background-image: -webkit-linear-gradient(top, #1270c8, #0a3c6a);
+  background-image: linear-gradient(to bottom, #1270c8, #0a3c6a);
+  text-align: center;
+}
+/* line 6, ../../../components/sass/modules/_footer.scss */
+footer ul {
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+}
+/* line 46, ../../../components/sass/_mixins.scss */
+footer ul:before, footer ul:after {
+  content: '';
+  display: table;
+}
+/* line 51, ../../../components/sass/_mixins.scss */
+footer ul:after {
+  clear: both;
+}
+/* line 12, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+footer ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 10, ../../../components/sass/modules/_footer.scss */
+footer ul li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 3.33333%;
+  padding-right: 3.33333%;
+  list-style: none;
+  display: block;
+  padding: 20px;
+}
+/* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+footer ul li:nth-child(3n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+}
+/* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+footer ul li:nth-child(3n + 2) {
+  margin-left: 33.33333%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
+footer ul li:nth-child(3n + 3) {
+  margin-left: 66.66667%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 16, ../../../components/sass/modules/_footer.scss */
+footer ul li .footericon {
+  fill: #FFFFFF;
+  height: 50px;
+  width: 50px;
+}
+/* line 21, ../../../components/sass/modules/_footer.scss */
+footer ul li .footericon:hover {
+  fill: #F69627;
+  height: 60px;
+  width: 60px;
+}
+
+/* line 1, ../../../components/sass/modules/_accreditations.scss */
+.accreditations {
+  @clearfix;
+}
+/* line 4, ../../../components/sass/modules/_accreditations.scss */
+.accreditations h2 {
+  text-align: center;
+}
+/* line 8, ../../../components/sass/modules/_accreditations.scss */
+.accreditations p {
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 0.5em;
+  font-size: 90%;
+  color: gray;
+}
+@media (min-width: 960px) {
+  /* line 8, ../../../components/sass/modules/_accreditations.scss */
+  .accreditations p {
+    width: 70%;
+  }
+}
+
+/* line 26, ../../../components/sass/modules/_accreditations.scss */
+.accred {
+  @clearfix;
+  margin: 0 auto;
+  padding-top: 0.5em;
+}
+
+/* line 32, ../../../components/sass/modules/_accreditations.scss */
+.accet {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/accet.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 60px;
+  background-size: contain;
+}
+
+/* line 39, ../../../components/sass/modules/_accreditations.scss */
+.bppe {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/bppe.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 150px;
+  background-size: contain;
+}
+
+/* line 46, ../../../components/sass/modules/_accreditations.scss */
+.ed {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/ed.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 150px;
+  background-size: contain;
+}
+
+/**
+ * CSS Modal
+ * http://drublic.github.com/css-modal
+ *
+ * @author Hans Christian Reinl - @drublic
+ */
+/**
+ * CSS Modal Configuration
+ * http://drublic.github.com/css-modal
+ *
+ * @author Hans Christian Reinl - @drublic
+ */
+/* line 2, ../../../components/sass/modal/_modal-core.scss */
+html {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 9, ../../../components/sass/modal/_modal-core.scss */
+.has-overlay {
+  overflow: hidden;
+}
+/* line 12, ../../../components/sass/modal/_modal-core.scss */
+.has-overlay > body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 18, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade, .modal--show {
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  display: none\9;
+}
+/* line 41, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade:target, .modal--show:target, .is-active.modal--fade, .is-active.modal--show {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
+/* line 58, ../../../components/sass/modal/_modal-core.scss */
+.is-active.modal--fade, .is-active.modal--show {
+  display: block\9;
+  height: 100% \9;
+  width: 100% \9;
+}
+/* line 65, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade:target, .modal--show:target, .is-active.modal--fade, .is-active.modal--show {
+  display: block\9;
+}
+/* line 71, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-inner, .modal--show .modal-inner {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  z-index: 20;
+  margin-left: -325px;
+  width: 650px;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 82, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-inner > img, .modal--show .modal-inner > img,
+.modal--fade .modal-inner > video,
+.modal--show .modal-inner > video,
+.modal--fade .modal-inner > iframe,
+.modal--show .modal-inner > iframe {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+}
+/* line 90, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-inner > img, .modal--show .modal-inner > img {
+  width: auto;
+  max-width: 100%;
+}
+/* line 95, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-inner iframe, .modal--show .modal-inner iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+/* line 103, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-content, .modal--show .modal-content {
+  max-height: 700px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 110, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-content > *, .modal--show .modal-content > * {
+  max-width: 100%;
+}
+/* line 116, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade footer, .modal--show footer {
+  border-top: 1px solid white;
+  padding: 0 1.2em 18px;
+  background: #f0f0f0;
+  border-radius: 2px;
+}
+/* line 124, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-close, .modal--show .modal-close {
+  display: block;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  overflow: hidden;
+}
+/* line 131, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-close:focus:after, .modal--show .modal-close:focus:after {
+  outline: 1px dotted;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+/* line 137, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-close:before, .modal--show .modal-close:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+/* line 148, ../../../components/sass/modal/_modal-core.scss */
+.modal--fade .modal-close:after, .modal--show .modal-close:after {
+  content: '\00d7';
+  position: absolute;
+  top: 35px;
+  right: 50%;
+  z-index: 20;
+  margin-right: -325px;
+}
+@media screen and (max-width: 690px) {
+  /* line 161, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade .modal-inner, .modal--show .modal-inner {
+    width: auto;
+    left: 20px;
+    right: 20px;
+    margin-left: 0;
+  }
+  /* line 169, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade .modal-close:after, .modal--show .modal-close:after {
+    margin-right: 0 !important;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 30em) {
+  /* line 18, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade, .modal--show {
+    -webkit-transform: translate(0, 400px);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    -webkit-transition: opacity 1ms .25s;
+    -moz-transition: opacity 1ms .25s;
+    -o-transition: opacity 1ms .25s;
+    -ms-transition: opacity 1ms .25s;
+    transition: opacity 1ms .25s;
+    display: block;
+    right: auto;
+    bottom: auto;
+  }
+  /* line 192, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade:target, .modal--show:target, .is-active.modal--fade, .is-active.modal--show {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 198, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade:target .modal-close, .modal--show:target .modal-close, .is-active.modal--fade .modal-close, .is-active.modal--show .modal-close {
+    display: block;
+  }
+  /* line 203, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade .modal-inner, .modal--show .modal-inner {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+  }
+  /* line 215, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade .modal-content, .modal--show .modal-content {
+    max-height: none;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
+  /* line 227, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade .modal-close, .modal--show .modal-close {
+    display: none;
+    right: auto;
+  }
+  /* line 231, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade .modal-close:before, .modal--show .modal-close:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+  }
+  /* line 240, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade .modal-close:after, .modal--show .modal-close:after {
+    top: 5px !important;
+    right: 5px;
+    left: auto;
+    margin-left: 0;
+  }
+}
+@media screen and (max-height: 46em) and (min-width: 30em) {
+  /* line 252, ../../../components/sass/modal/_modal-core.scss */
+  .modal--fade .modal-content, .modal--show .modal-content {
+    max-height: 600px;
+  }
+}
+/* line 266, ../../../components/sass/modal/_modal-core.scss */
+.is-stacked.modal--fade, .is-stacked.modal--show {
+  -webkit-transform: translate(0, 0) scale(1, 1);
+  -moz-transform: translate(0, 0) scale(1, 1);
+  -o-transform: translate(0, 0) scale(1, 1);
+  -ms-transform: translate(0, 0) scale(1, 1);
+  transform: translate(0, 0) scale(1, 1);
+  opacity: 1;
+}
+/* line 276, ../../../components/sass/modal/_modal-core.scss */
+.is-stacked.modal--fade .modal-inner, .is-stacked.modal--show .modal-inner {
+  -webkit-animation: scaleDown .7s ease both;
+  -moz-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both;
+}
+/* line 284, ../../../components/sass/modal/_modal-core.scss */
+.is-stacked.modal--fade .modal-close, .is-stacked.modal--show .modal-close {
+  opacity: 0;
+}
+@media screen and (max-width: 30em) {
+  /* line 266, ../../../components/sass/modal/_modal-core.scss */
+  .is-stacked.modal--fade, .is-stacked.modal--show {
+    -webkit-animation: scaleDown .7s ease both;
+    -moz-animation: scaleDown .7s ease both;
+    animation: scaleDown .7s ease both;
+  }
+  /* line 296, ../../../components/sass/modal/_modal-core.scss */
+  .is-stacked.modal--fade .modal-inner, .is-stacked.modal--show .modal-inner {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
+  /* line 303, ../../../components/sass/modal/_modal-core.scss */
+  .is-stacked.modal--fade .modal-close, .is-stacked.modal--show .modal-close {
+    opacity: 1;
+  }
+}
+
+/**
+ * All animations for CSS Modal
+ *
+ * Available:
+ * - %modal--transition-fade (fade)
+ * - %modal--transition-zoomIn (zooms in)
+ * - %modal--transition-plainScreen (hides background)
+ *
+ * Usage:
+ *
+ * .selector {
+ * 		@extend %modal--transition-fade;
+ * }
+ *
+ */
+@media screen and (min-width: 30em) {
+  /* line 23, ../../../components/sass/modal/_modal-animations.scss */
+  .modal--fade {
+    transition: opacity 0.4s;
+  }
+}
+
+/**
+ * CSS Modal Themes
+ * http://drublic.github.com/css-modal
+ *
+ * @author Hans Christian Reinl - @drublic
+ */
+/*
+ * Global Theme Styles
+ */
+/* line 12, ../../../components/sass/modal/_modal-theme.scss */
+.modal--fade, .modal--show {
+  color: #222;
+  line-height: 1.3;
+}
+/* line 18, ../../../components/sass/modal/_modal-theme.scss */
+.modal--fade .modal-inner, .modal--show .modal-inner {
+  border-radius: 2px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  max-width: 100%;
+  -webkit-transition: max-width 0.25s linear, margin-left 0.125s linear;
+  transition: max-width 0.25s linear, margin-left 0.125s linear;
+}
+/* line 52, ../../../components/sass/modal/_modal-theme.scss */
+.modal--fade footer, .modal--show footer {
+  border-top: 1px solid white;
+  padding: 0 1.2em 18px;
+  background: #f0f0f0;
+  border-radius: 2px;
+}
+/* line 61, ../../../components/sass/modal/_modal-theme.scss */
+.modal--fade .modal-close, .modal--show .modal-close {
+  text-indent: -100px;
+}
+/* line 65, ../../../components/sass/modal/_modal-theme.scss */
+.modal--fade .modal-close:before, .modal--show .modal-close:before {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAEUlEQVQoz2NgeEYAjioYSQoAzOTmAXhPhyoAAAAASUVORK5CYII=");
+}
+/* line 71, ../../../components/sass/modal/_modal-theme.scss */
+.modal--fade .modal-close:after, .modal--show .modal-close:after {
+  content: '\00d7';
+  background: #F69627;
+  border-radius: 2px;
+  padding: 2px 8px;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-indent: 0;
+}
+@media screen and (max-width: 30em) {
+  /* line 88, ../../../components/sass/modal/_modal-theme.scss */
+  .modal--fade .modal-close:before, .modal--show .modal-close:before {
+    background: #27aae2;
+    height: 0em;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  }
+  /* line 96, ../../../components/sass/modal/_modal-theme.scss */
+  .modal--fade .modal-inner, .modal--show .modal-inner {
+    padding-top: 0em;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  /* line 102, ../../../components/sass/modal/_modal-theme.scss */
+  .modal--fade .modal-close, .modal--show .modal-close {
+    text-decoration: none;
+  }
+  /* line 106, ../../../components/sass/modal/_modal-theme.scss */
+  .modal--fade .modal-close:after, .modal--show .modal-close:after {
+    content: attr(data-close);
+    display: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+}
+
+/*
+ * Plain Screen Theme Styles
+ */
+/**
+ * Apply the desired modal behavior to your container selector
+ */

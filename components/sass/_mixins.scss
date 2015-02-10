@@ -1,0 +1,83 @@
+@mixin backImage(
+  $image,
+  $grDir: to bottom,
+  $opStart: 0,
+  $opEnd: 0,
+  $bgPos: center center
+  ) {
+  background: linear-gradient(
+    $grDir,
+    rgba(0,0,0, $opStart),
+    rgba(0,0,0, $opEnd)
+  ),url($image);
+  background-repeat: no-repeat;
+  background-position: $bgPos; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} //backImage
+
+
+@mixin testImage(
+  $image,
+  $grDir: to bottom,
+  $opStart: 0,
+  $opEnd: 0,
+  $bgPos: center center
+  ) {
+  background: linear-gradient(
+    $grDir,
+    rgba(0,0,0, $opStart),
+    rgba(0,0,0, $opEnd)
+  ),url($image);
+  @include border-radius(50%);
+  width: $testImgSize;
+  height: $testImgSize;
+  background-repeat: no-repeat;
+  background-position: $bgPos; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} //backImage
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  } //before, after
+  &:after {
+    clear: both;
+  } //after
+} //clearfix
+
+
+@mixin button($color) {
+  @include clearfix;
+  @include button-static;
+  background-color: $color;
+  
+  &:hover {
+    background-color: lighten($color,5);
+  }
+}
+
+@mixin button-static {
+  display: block;
+  border: none;
+  font: $mainFont;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: $light;
+  width: 100%;
+  height: 90%;
+  margin: 0.2em 0;
+  padding: 0.2em;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

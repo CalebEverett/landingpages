@@ -1,0 +1,53 @@
+@include border-box-sizing; //uses border box sizing like the old IE+
+
+$susy: (
+  columns: 12,
+  container: auto,
+  gutter-position: inside
+);
+
+$narrow: 400px;
+$small: 600px;
+$medium: 960px;
+$wide: 1200px;
+
+
+//Add Color Palette
+$blue       : #1270C8;
+$green      : #45B29D;
+$yellow     : #EFC94C;
+$orange     : #F69627;
+$red        : #DF4848;
+$pink       : #CD0069;
+$purple     : #6C71C4;
+$dark       : #000000;
+$light      : #FFFFFF;
+
+$backgroundColor    : $light;
+$typeDefault        : $dark;
+$navBackground      : $blue;
+$navForeground      : $light;
+$navHover           : $orange;
+$navBrandBg         : $blue;
+$headersubbg        : $dark;
+
+//Font variables
+
+$headfontfamily		: 'Slabo 27px', serif;
+$fontfamily     	: 'Roboto', sans-serif;
+
+$thin     : 300;
+$normal   : 400;
+$bold     : 600;
+$heavy    : 800;
+
+$headFont  :  $thin 2.0em/1.3em $headfontfamily;
+$headFont2  : $thin 1.5em/1.2em $fontfamily;
+$mainFont   : $thin 1.25em/1.25em $fontfamily;
+$headColor  : $orange;
+$headColor2 : $blue;
+$formLabel	: $thin 1.0em/1.5em $fontfamily;
+
+//Testimonial image size
+$testImgSize : 200px;
+

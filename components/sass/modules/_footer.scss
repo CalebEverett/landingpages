@@ -1,0 +1,37 @@
+footer {
+  width: 100%;
+  @include background-image(linear-gradient(top, $blue, darken($blue,20)));
+  //padding: 30px 0;
+    text-align: center;
+    ul {
+    @include clearfix;
+    @include container(60em);
+      list-style: none;
+      li {
+        @include gallery(1 of 3);
+        list-style: none;
+        display: block;
+        padding: 20px;
+  
+        .footericon {
+        fill: $light;
+        height: 50px;
+        width: 50px;
+
+        &:hover{
+        fill: $orange;
+        height: 60px;
+        width: 60px;
+
+        }
+        }        
+      } //li
+
+    } //ul
+
+    
+
+    
+
+
+}//footer
