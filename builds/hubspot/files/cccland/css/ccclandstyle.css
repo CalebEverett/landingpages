@@ -7,9 +7,9 @@
 /* HubSpot Style Boilerplate            */
 /****************************************/
 /* These includes are optional, but helpful. 
-{% include "hubspot/styles/responsive/required_base.css" %}
-{% include "hubspot/styles/responsive/modules.css" %}
-{% include "hubspot/styles/patches/recommended.css" %}
+{% include "HubSpot/styles/responsive/required_base.css" %}
+{% include "HubSpot/styles/responsive/modules.css" %}
+{% include "HubSpot/styles/patches/recommended.css" %}
 */
 /*****************************************/
 /* Start your style declarations here    */

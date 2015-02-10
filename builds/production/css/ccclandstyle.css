@@ -66,7 +66,7 @@ h2 { font: 300 1.5em/1.2em "Roboto", sans-serif; color: #1270C8; margin-top: 1.5
 h3, h4 { font: 300 2em/1.3em "Slabo 27px", serif; color: #F69627; font-size: 1.0em; text-align: center; }
 
 /* line 29, ../../../components/sass/_base.scss */
-strong { font-weight: 300; }
+strong { font-weight: 600; }
 
 /* line 33, ../../../components/sass/_base.scss */
 p { padding: 10px 0; line-height: 135%; text-align: justify; }

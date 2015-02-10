@@ -20,6 +20,7 @@
     "gulp-if": "^1.2.4",
     "gulp-inject": "^1.1.1",
     "gulp-minify-html": "^0.1.4",
+    "gulp-replace": "^0.5.2",
     "gulp-svgmin": "^1.1.0",
     "gulp-svgstore": "^5.0.0",
     "gulp-uglify": "^0.3.1",

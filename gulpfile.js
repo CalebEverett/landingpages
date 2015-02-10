@@ -1,17 +1,18 @@
 var gulp = require('gulp'),
-    gutil = require('gulp-util'),
     browserify = require('gulp-browserify'),
+    cheerio = require('gulp-cheerio'),
     compass = require('gulp-compass'),
+    concat = require('gulp-concat'),
     connect = require('gulp-connect'),
     gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify'),
+    gutil = require('gulp-util'),
+    inject = require('gulp-inject'),
     minifyHTML = require('gulp-minify-html'),
-    concat = require('gulp-concat');
-    path = require('path');
-    svgstore = require('gulp-svgstore');
-    svgmin = require('gulp-svgmin');
-    inject = require('gulp-inject');
-    cheerio = require('gulp-cheerio');
+    path = require('path'),
+    replace = require('gulp-replace'),
+    svgmin = require('gulp-svgmin'),
+    svgstore = require('gulp-svgstore'),
+    uglify = require('gulp-uglify');
 
 
 var env,
@@ -20,9 +21,11 @@ var env,
     htmlSources,
     outputDir,
     outputDir,
-    sassStyle;
+    sassStyle,
+    hubspotDir = 'builds/hubspot/';
+    hubspotFile = 'cccland' //used for .html file and for hubspot folders
 
-env = 'production';
+env = 'development';
 
 if (env==='development') {
   outputDir = 'builds/development/';
@@ -85,8 +88,6 @@ gulp.task('compass', function() {
     .pipe(connect.reload())
 });
 
-
-
 gulp.task('svgstore', function () {
   var svgs = gulp
   .src('builds/development/svg/*.svg')
@@ -134,5 +135,34 @@ gulp.task('move', function() {
   gulp.src('builds/development/images/**/*.*')
   .pipe(gulpif(env === 'production', gulp.dest(outputDir+'images')))
 });
+
+//Hubspotify files
+  gulp.task('hubspotify', function(){
+    gulp.src(['components/hubspot/htmlhead.html', outputDir + 'index.html'])
+    .pipe(concat(hubspotFile + '.html'))
+    .pipe(cheerio(function ($, file) {
+      $('meta[name=author]').attr('content', '{{ page_meta.meta_author }}'),
+      $('meta[name=description]').attr('content', '{{ page_meta.meta_description }}'),
+      $('link[rel=shortcut]').attr('href', '{{ site_settings.favicon_src }}')
+      }))
+    .pipe(replace('hubspot', 'HubSpot'))
+    .pipe(replace('<!--hsheaderincludes-->', '{{ standard_header_includes }}'))
+    .pipe(replace('<!--hsfooterincludes-->', '{{ standard_footer_includes }}'))
+    .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/templates'));
+    gulp.src(['components/hubspot/csshead.txt', outputDir + 'css/ccclandstyle.css'])
+    .pipe(concat('ccclandstyle.css'))
+    .pipe(replace('hubspot', 'HubSpot'))
+    .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/css'));
+    gulp.src(['components/hubspot/headhead.js', outputDir + 'js/headerscript.js'])
+    .pipe(concat('headerscript.js'))
+    .pipe(replace('hubspot', 'HubSpot'))
+    .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/js'));
+    gulp.src(['components/hubspot/foothead.js', outputDir + 'js/footerscript.js'])
+    .pipe(concat('footerscript.js'))
+    .pipe(replace('hubspot', 'HubSpot'))
+    .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/js'));
+    gulp.src('builds/' + env + '/images/**/*.*')
+    .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/images'));
+  });
 
 gulp.task('default', ['watch', 'svgstore', 'html', 'jsFooter', 'jsHeader','compass', 'move', 'connect']);
