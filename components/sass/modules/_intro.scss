@@ -14,6 +14,32 @@ header {
       @include justify-content(flex-start);
     }
 
+    .hgroup2{
+    @include clearfix;
+    @include container;
+    }
+
+    #introcta {
+        font-family: $fontmarker;
+        color: $dark;
+        font-size: 2em;
+        vertical-align: middle;
+        
+    }
+
+    #handarrow {
+    height: 75px;
+    width: 75x;
+    fill: $dark;
+
+    @include breakpoint($medium){
+    width: 75px;
+    }
+
+
+
+    }
+
     .hgroup {
         padding: 5%;
         padding-bottom: 1%;

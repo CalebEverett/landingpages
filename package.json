@@ -1,10 +1,10 @@
 {
   "name": "CCCHubspotLandingPages",
   "version": "0.0.1",
-  "description": "Landing pages for Career College of California on Hubspot",
+  "description": "Landing pages for Career College of California",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CalebEverett/HubspotLP"
+    "url": "https://github.com/CalebEverett/landingpages"
   },
   "author": "Caleb Everett",
   "devDependencies": {

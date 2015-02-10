@@ -1,4 +1,4 @@
-/*
+/* testing
 [hubspot-metadata]
 {
 "category":	"asset",
@@ -673,11 +673,16 @@ body form.hs-form .hs-form-field ul.inputs-list {
   }
 }
 
-/* line 17, ../../../components/sass/modules/_main.scss */
+/* line 16, ../../../components/sass/modules/_main.scss */
+.lastp {
+  text-align: center;
+}
+
+/* line 21, ../../../components/sass/modules/_main.scss */
 .testimonial {
   margin-top: 1.5em;
 }
-/* line 20, ../../../components/sass/modules/_main.scss */
+/* line 24, ../../../components/sass/modules/_main.scss */
 .testimonial p {
   width: 200px;
   text-align: center;
@@ -686,13 +691,13 @@ body form.hs-form .hs-form-field ul.inputs-list {
   margin: auto;
 }
 
-/* line 29, ../../../components/sass/modules/_main.scss */
+/* line 33, ../../../components/sass/modules/_main.scss */
 .testimage {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 35, ../../../components/sass/modules/_main.scss */
+/* line 39, ../../../components/sass/modules/_main.scss */
 #hayley {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hayley.jpg");
   -moz-border-radius: 50%;
@@ -709,7 +714,7 @@ body form.hs-form .hs-form-field ul.inputs-list {
   height: 200px;
 }
 
-/* line 40, ../../../components/sass/modules/_main.scss */
+/* line 44, ../../../components/sass/modules/_main.scss */
 #victoria {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/victoria.jpg");
   -moz-border-radius: 50%;
