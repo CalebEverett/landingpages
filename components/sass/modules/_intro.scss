@@ -28,8 +28,9 @@ header {
     }
 
     #handarrow {
-    height: 75px;
-    width: 75x;
+    height: 250px;
+    width: 250x;
+    background: cover;
     fill: $dark;
 
     @include breakpoint($medium){

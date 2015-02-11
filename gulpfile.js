@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     minifyHTML = require('gulp-minify-html'),
     path = require('path'),
     replace = require('gulp-replace'),
+    shell = require('gulp-shell'),
     svgmin = require('gulp-svgmin'),
     svgstore = require('gulp-svgstore'),
     uglify = require('gulp-uglify');
@@ -47,7 +48,7 @@ jsFooterSources = [
 jsHeaderSources = [
   'node_modules/components-webfontloader/webfont.js',
   'components/scripts/header/headerscript.js',
-  'components/scripts/header/hubspotforms.js'
+  'components/scripts/header/hubspotforms.js' //comment out this line when deploying to hubspot
 ];
 
 sassSources = ['components/sass/ccclandstyle.scss'];
@@ -138,31 +139,46 @@ gulp.task('move', function() {
 
 //Hubspotify files
   gulp.task('hubspotify', function(){
+    //html files
     gulp.src(['components/hubspot/htmlhead.html', outputDir + 'index.html'])
     .pipe(concat(hubspotFile + '.html'))
     .pipe(cheerio(function ($, file) {
+      $('title').replaceWith('content', '{{ page_meta.html_title }}'),
       $('meta[name=author]').attr('content', '{{ page_meta.meta_author }}'),
       $('meta[name=description]').attr('content', '{{ page_meta.meta_description }}'),
-      $('link[rel=shortcut]').attr('href', '{{ site_settings.favicon_src }}')
+      $('#favicon').attr('href', '{{ site_settings.favicon_src }}'),
+      $('.hsform').replaceWith('{% form "form module name" label="Sample form" %}'),
+      $.html()
       }))
-    .pipe(replace('hubspot', 'HubSpot'))
+    .pipe(replace('images/', hubspotFile + '/images/'))
+    .pipe(replace('css/ccclandstyle.css', '{{ get_public_template_url("custom/page/css/ccclandstyle.css") }}'))
+    .pipe(replace('js/headerscript.js', '{{ get_public_template_url("custom/page/js/headerscript.js") }}'))
+    .pipe(replace('js/footerscript.js', '{{ get_public_template_url("custom/page/js/footerscript.js") }}'))
     .pipe(replace('<!--hsheaderincludes-->', '{{ standard_header_includes }}'))
     .pipe(replace('<!--hsfooterincludes-->', '{{ standard_footer_includes }}'))
-    .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/templates'));
-    gulp.src(['components/hubspot/csshead.txt', outputDir + 'css/ccclandstyle.css'])
+    .pipe(gulp.dest(hubspotDir + 'templates/' + hubspotFile ));
+    gulp.src(['components/hubspot/csshead.css', outputDir + 'css/ccclandstyle.css'])
     .pipe(concat('ccclandstyle.css'))
-    .pipe(replace('hubspot', 'HubSpot'))
-    .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/css'));
+    .pipe(replace('images/accet.png', 'http://info.careercalifornia.edu/hs-fs/hub/164638/file-2480610107-png/cccland/images/accet.png'))
+    .pipe(replace('images/bppe.png', 'http://info.careercalifornia.edu/hs-fs/hub/164638/file-2473865141-png/cccland/images/bppe.png'))
+    .pipe(replace('images/ed.png', 'http://cdn2.hubspot.net/hub/164638/file-2473926666-png/cccland/images/ed.png'))
+    .pipe(replace('images/favicon.png', 'http://cdn2.hubspot.net/hub/164638/file-2480633432-ico/cccland/images/favicon.ico'))
+    .pipe(replace('images/hayley.jpg', 'http://info.careercalifornia.edu/hs-fs/hub/164638/file-2480300020-jpg/cccland/images/hayley.jpg'))
+    .pipe(replace('images/JosephHero.jpg', 'http://info.careercalifornia.edu/hs-fs/hub/164638/file-2481161664-jpg/cccland/images/JosephHero.jpg'))
+    .pipe(replace('images/victoria.jpg', 'http://info.careercalifornia.edu/hs-fs/hub/164638/file-2480643302-jpg/cccland/images/victoria.jpg'))
+    .pipe(gulp.dest(hubspotDir + 'templates/' + hubspotFile + '/css'));
     gulp.src(['components/hubspot/headhead.js', outputDir + 'js/headerscript.js'])
     .pipe(concat('headerscript.js'))
-    .pipe(replace('hubspot', 'HubSpot'))
-    .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/js'));
+    .pipe(gulp.dest(hubspotDir + 'templates/' + hubspotFile + '/js'));
     gulp.src(['components/hubspot/foothead.js', outputDir + 'js/footerscript.js'])
     .pipe(concat('footerscript.js'))
-    .pipe(replace('hubspot', 'HubSpot'))
-    .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/js'));
+    .pipe(gulp.dest(hubspotDir + 'templates/' + hubspotFile + '/js'));
     gulp.src('builds/' + env + '/images/**/*.*')
     .pipe(gulp.dest(hubspotDir + 'files/' + hubspotFile + '/images'));
   });
+
+//upload to hubspot
+var apiKey = file.contents.toString('components/hubspot/apikey.txt');
+gulp.task('cosupload',['hubspotify'], shell.task('upload_to_cos --action=upload --hub-id=164638 -t builds/hubspot/' + apiKey));
 
 gulp.task('default', ['watch', 'svgstore', 'html', 'jsFooter', 'jsHeader','compass', 'move', 'connect']);

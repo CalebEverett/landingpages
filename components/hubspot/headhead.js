@@ -1,10 +1,8 @@
-<!--
 [hubspot-metadata]
 {
     "category": "asset", 
     "creatable": false, 
-    "id": 00000000, 
-    "path": "headerscript.js"
+    "path": "custom/page/js/headerscript.js",
+    "id": 2482054529
 }
 [end-hubspot-metadata]
--->

@@ -1,3 +1,11 @@
+[hubspot-metadata]
+{
+"category":	"asset",
+"creatable": false,
+"path": "custom/page/css/ccclandstyle.css",
+"id":	2474874886
+}
+[end-hubspot-metadata]
 /* @import url('http://example.com/example_style.css'); */
 /***********************************************/
 /* CSS @imports must be at the top of the file */
@@ -7,9 +15,9 @@
 /* HubSpot Style Boilerplate            */
 /****************************************/
 /* These includes are optional, but helpful. 
-{% include "HubSpot/styles/responsive/required_base.css" %}
-{% include "HubSpot/styles/responsive/modules.css" %}
-{% include "HubSpot/styles/patches/recommended.css" %}
+{% include "hubspot/styles/responsive/required_base.css" %}
+{% include "hubspot/styles/responsive/modules.css" %}
+{% include "hubspot/styles/patches/recommended.css" %}
 */
 /*****************************************/
 /* Start your style declarations here    */
@@ -236,7 +244,7 @@ body main aside:after {
 
 /* line 2, ../../../components/sass/modules/_intro.scss */
 header .fullheight {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/JosephHero.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../http://info.careercalifornia.edu/hs-fs/hub/164638/file-2481161664-jpg/cccland/images/JosephHero.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -689,7 +697,7 @@ body form.hs-form .hs-form-field ul.inputs-list {
 
 /* line 39, ../../../components/sass/modules/_main.scss */
 #hayley {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/hayley.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../http://info.careercalifornia.edu/hs-fs/hub/164638/file-2480300020-jpg/cccland/images/hayley.jpg");
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -706,7 +714,7 @@ body form.hs-form .hs-form-field ul.inputs-list {
 
 /* line 44, ../../../components/sass/modules/_main.scss */
 #victoria {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/victoria.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../http://info.careercalifornia.edu/hs-fs/hub/164638/file-2480643302-jpg/cccland/images/victoria.jpg");
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -831,7 +839,7 @@ footer ul li .footericon:hover {
 
 /* line 32, ../../../components/sass/modules/_accreditations.scss */
 .accet {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/accet.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../http://info.careercalifornia.edu/hs-fs/hub/164638/file-2480610107-png/cccland/images/accet.png");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -844,7 +852,7 @@ footer ul li .footericon:hover {
 
 /* line 39, ../../../components/sass/modules/_accreditations.scss */
 .bppe {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/bppe.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../http://info.careercalifornia.edu/hs-fs/hub/164638/file-2473865141-png/cccland/images/bppe.png");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -857,7 +865,7 @@ footer ul li .footericon:hover {
 
 /* line 46, ../../../components/sass/modules/_accreditations.scss */
 .ed {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/ed.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../http://cdn2.hubspot.net/hub/164638/file-2473926666-png/cccland/images/ed.png");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
