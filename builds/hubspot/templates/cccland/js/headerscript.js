@@ -43,7 +43,7 @@ Y.prototype.load=function(a){a(this.m)};function Z(a,b){this.c=a;this.e=b}Z.prot
 
   WebFont.load({
   	google: {
-  		families: ['Slabo+27px','Roboto:600,300']
+  		families: ['Slabo+27px','Roboto:600,300','Permanent+Marker']
   	}
   });
 

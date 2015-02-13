@@ -152,7 +152,7 @@ body select:focus:required:invalid:focus {}
   line-height: 125%;
 }
 
-.form-header{
+.form-header {
 
 h2 {
   color: $light;
@@ -161,9 +161,18 @@ h2 {
   margin-top: 0em;
   padding: 0.5em;
   font-weight: $normal;
+  margin-bottom: 0em;
   }
 
 }//form-header
+
+#hs_cos_wrapper_form_module_name > form {
+  margin-bottom: 0;
+}
+
+#hs_cos_wrapper_form_module_name_title {
+    margin-top: 0;
+}
 
   #privacy {
   background-color: lighten($blue, 5);
