@@ -14,24 +14,26 @@ footer {
         padding: 20px;
   
         .footericon {
-        fill: $light;
-        height: 50px;
-        width: 50px;
+          fill: $light;
+          height: 50px;
+          width: 50px;
 
-        &:hover{
-        fill: $orange;
-        height: 60px;
-        width: 60px;
-
+          &:hover{
+            fill: $orange;
+            height: 60px;
+            width: 60px;
+          }
         }
-        }        
+
+                        
       } //li
 
     } //ul
 
-    
-
-    
-
-
 }//footer
+
+#thankyoufoot {
+  position: fixed;
+  bottom: 0;
+  height: 90px;
+}

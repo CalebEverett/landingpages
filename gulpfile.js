@@ -104,7 +104,7 @@ gulp.task('svgstore', function () {
   }
 
   return gulp
-  .src('builds/development/index.html')
+  .src('builds/development/*.html')
   .pipe(inject(svgs, { transform: fileContents }))
   .pipe(gulp.dest('builds/development'));
 });
@@ -179,13 +179,13 @@ gulp.task('hs-svgstore', function () {
     .pipe(gulp.dest(hubspotDir + 'templates/' + hubspotFile ));
     gulp.src(['components/hubspot/csshead.css', outputDir + 'css/ccclandstyle.css'])
     .pipe(concat('ccclandstyle.css'))
-    .pipe(replace('images/accet.png', 'http://cdn2.hubspot.net/hub/164638/file-2480610107-png/cccland/images/accet.png'))
-    .pipe(replace('images/bppe.png', 'http://cdn2.hubspot.net/hub/164638/file-2473865141-png/cccland/images/bppe.png'))
-    .pipe(replace('images/ed.png', 'http://cdn2.hubspot.net/hub/164638/file-2473926666-png/cccland/images/ed.png'))
-    .pipe(replace('images/favicon.png', 'http://cdn2.hubspot.net/hub/164638/file-2480633432-ico/cccland/images/favicon.ico'))
-    .pipe(replace('images/hayley.jpg', 'http://cdn2.hubspot.net/hub/164638/file-2480300020-jpg/cccland/images/hayley.jpg'))
-    .pipe(replace('images/JosephHero.jpg', 'http://cdn2.hubspot.net/hub/164638/file-2481161664-jpg/cccland/images/JosephHero.jpg'))
-    .pipe(replace('images/victoria.jpg', 'http://cdn2.hubspot.net/hub/164638/file-2480643302-jpg/cccland/images/victoria.jpg'))
+    .pipe(replace('/images/accet.png', 'http://cdn2.hubspot.net/hub/164638/file-2480610107-png/cccland/images/accet.png'))
+    .pipe(replace('/images/bppe.png', 'http://cdn2.hubspot.net/hub/164638/file-2473865141-png/cccland/images/bppe.png'))
+    .pipe(replace('/images/ed.png', 'http://cdn2.hubspot.net/hub/164638/file-2473926666-png/cccland/images/ed.png'))
+    .pipe(replace('/images/favicon.png', 'http://cdn2.hubspot.net/hub/164638/file-2480633432-ico/cccland/images/favicon.ico'))
+    .pipe(replace('/images/hayley.jpg', 'http://cdn2.hubspot.net/hub/164638/file-2480300020-jpg/cccland/images/hayley.jpg'))
+    .pipe(replace('/images/JosephHero.jpg', 'http://cdn2.hubspot.net/hub/164638/file-2481161664-jpg/cccland/images/JosephHero.jpg'))
+    .pipe(replace('/images/victoria.jpg', 'http://cdn2.hubspot.net/hub/164638/file-2480643302-jpg/cccland/images/victoria.jpg'))
     .pipe(gulp.dest(hubspotDir + 'templates/' + hubspotFile + '/css'));
     gulp.src(['components/hubspot/headhead.js', outputDir + 'js/headerscript.js'])
     .pipe(concat('headerscript.js'))
@@ -200,6 +200,6 @@ gulp.task('hs-svgstore', function () {
 
 
 //upload to hubspot
-gulp.task('cosupload',['hubspotify','hs-svgstore'], shell.task('upload_to_cos --action=upload --hub-id=164638 -t builds/hubspot/ --api-key=[]'));
+gulp.task('cosupload',['hubspotify','hs-svgstore'], shell.task('upload_to_cos --action=upload --hub-id=164638 -t builds/hubspot/  --api-key=[]'));
 
 gulp.task('default', ['watch', 'svgstore', 'html', 'jsFooter', 'jsHeader','compass', 'move', 'connect']);

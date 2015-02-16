@@ -42,7 +42,7 @@
 }
 
 .testimage {
-	margin: 0 auto;
+	margin: 0 30px;
 	text-align: center;
 
 }
@@ -62,3 +62,12 @@
 	height: $testImgSize;
 }
 
+#stephanie {
+	@include testImage('/images/stephanie.png');
+	height: $testImgSize;
+}
+
+#toni {
+	@include testImage('/images/toni.jpg');
+	height: $testImgSize;
+}

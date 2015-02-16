@@ -24,6 +24,19 @@ body {
     }//aside
 
 
+  }//main
+
+  .onepager {
+    @include container(50em);
+    margin-top: 20px;
+    margin-bottom: 90px;
+    width: 95%;
+  }
+
+  .thankphotos{
+    @include display-flex;
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
   }
 
 }
