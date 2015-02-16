@@ -53,7 +53,7 @@
   } //after
 } //clearfix
 
-
+//Buttons
 @mixin button($color) {
   @include clearfix;
   @include button-static;
