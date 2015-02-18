@@ -48,7 +48,7 @@ var t1 = new TimelineMax();
 
 if(wwidth <= small) {
 
-  t1.from(".introcta", 0.25, {opacity:0,delay:0.5})
+  t1.from(".introcta", 0.5, {opacity:0,delay:1.0})
   .from(".introcta", 1.5, {marginBottom: wheight-$('.titletext').height()-$('.introcta').height(),ease: Bounce.easeOut});
 }
 

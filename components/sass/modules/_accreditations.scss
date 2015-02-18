@@ -30,21 +30,21 @@
 }
 
 .accet {
-  @include backImage('/images/accet.png');
+  @include backImage('../images/accet.png');
   height: 60px;
   background-size: contain;
   
   }
 
 .bppe {
-  @include backImage('/images/bppe.png');
+  @include backImage('../images/bppe.png');
   height: 150px;
   background-size: contain;
   
   }
 
 .ed {
-  @include backImage('/images/ed.png');
+  @include backImage('../images/ed.png');
   height: 150px;
   background-size: contain;
   

@@ -31,6 +31,16 @@ body {
     margin-top: 20px;
     margin-bottom: 90px;
     width: 95%;
+
+    .testimonial {
+      @include flex-direction(column);
+    }
+
+    h1 {
+      margin: 1.0em 0em;
+      font-size: 2.5em;
+    }
+
   }
 
   .thankphotos{

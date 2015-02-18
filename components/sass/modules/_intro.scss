@@ -1,74 +1,80 @@
 header {
-  .joseph {
-    @include backImage('/images/JosephHero.jpg');
-  }
-
-  .fullheight {
-    //@include backImage('/images/JosephHero.jpg');
-      
-    @inlcude clearfix;
-    @include display-flex;
-    @include flex-direction(column);
-    @include justify-content(flex-end);
     
-    @include breakpoint($small) {
-        @include flex-direction(column-reverse);
-        @include justify-content(flex-start);
-
+    .mastudent {
+        @include backImage('../images/mahero.jpg');
     }
 
+    .joseph {
+        @include backImage('../images/JosephHero.jpg');
+    }
+  
 
-    .introcta {
+    .fullheight {
+
+        @inlcude clearfix;
         @include display-flex;
-        @include flex-direction(row);
-        @include justify-content(center);
-        @include background-image(linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,0.7)));
+        @include flex-direction(column);
+        @include justify-content(flex-end);
 
-        @include breakpoint($small){
+        @include breakpoint($small) {
+            @include flex-direction(column-reverse);
+            @include justify-content(flex-start);
+
+        }
+
+
+        .introcta {
+            @include display-flex;
+            @include flex-direction(row);
             @include justify-content(center);
-            margin-top: 150px;
-        }
+            @include background-image(linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,0.7)));
 
-        @include breakpoint($medium){
-            @include justify-content(center);
-            margin-top: 100px;
-        }
-
-        .introtext {
-            font-family: $fontmarker;
-            color: $blue;
-            font-size: 1.5em;
-            text-align: left;
-
-            @include breakpoint($medium){
-                color: $orange;
-            }
-        }
-
-        #handarrow {
-            width: 100px;
-            height: 100px;
-            padding-left: 5px;
-            background: cover;
-            fill: $blue;
-            padding-top: 20px;
-
-            @include breakpoint($medium){
-                fill: $orange;
+            @include breakpoint($small){
+                @include justify-content(center);
+                margin-top: 25px;
             }
 
-            &:hover{
-                fill: $orange;
+            @include breakpoint($medium){
+                @include justify-content(center);
+            }
+
+            .introtext {
+                font-family: $fontmarker;
+                color: $blue;
+                font-size: 1.25em;
+                text-align: left;
+                padding: 0;
+                margin: auto 0;
+
                 @include breakpoint($medium){
-                    fill: $blue;
+                    color: $orange;
+                }
+            }
+
+            #handarrow {
+                width: 70px;
+                height: 70px;
+                padding-left: 5px;
+                background: cover;
+                fill: $blue;
+                padding-top: 10px;
+
+                @include breakpoint($medium){
+                    fill: $orange;
                 }
 
+                &:hover{
+                    fill: $orange;
+                    @include breakpoint($medium){
+                        fill: $blue;
+                    }
+
+                }
             }
+
         }
-        
-    }
-         
-    .titletext{
+
+        .titletext{
        /* @include display-flex;
         @include flex-direction(row);
         @include justify-content(space-between);
@@ -78,7 +84,7 @@ header {
             @include justify-content(flex-start);
         }
 
-*/
+        */
         padding: 2%;
         padding-bottom: 1%;
         @include background-image(linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,0.7)));
@@ -91,33 +97,47 @@ header {
         h1 {
             color: $orange;
             text-align: left;
-            line-height: 0.8;
+            line-height: 1.0;
             margin: 0 auto;
-            font-size: 2em;
+            font-size: 1.5em;
+            
+            @include breakpoint($small){
+                @include text-shadow(#000000 1px 1px 1px);
+            }
 
             @include breakpoint($medium) {
                 font-size: 3em;
             }       
 
-        } //h1
-
-        h2 {
-            color: $blue;
-            font-family: $headfontfamily;
-            margin: 0 auto;
-            text-align: right;
-            font-size: 3em;
+            } //h1
 
             @include breakpoint($small){
-                text-align: left;
+            .ma {
+                   color: $orange !important;
+                }
             }
-            
 
-            @include breakpoint($medium) {
-                font-size: 5em;
-            }              
+            h2 {
+                color: $blue;
+                font-family: $headfontfamily;
+                margin: 0 auto;
+                text-align: right;
+                font-size: 2.25em;
+             
+                @include breakpoint($small){
+                   @include text-shadow(#000000 1px 1px 1px);
+                }
 
-        } //h2
-    }//titletext
-  } //fullheight
-} //header
+                @include breakpoint($small){
+                    text-align: left;
+                }
+
+
+                @include breakpoint($medium) {
+                    font-size: 5em;
+                }              
+
+                } //h2
+                }//titletext
+                } //fullheight
+                } //header
