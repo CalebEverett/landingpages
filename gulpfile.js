@@ -17,12 +17,6 @@ var gulp = require('gulp'),
     reload      = browserSync.reload,
     uglify = require('gulp-uglify');
 
-gulp.task('browser-sync', function() {
-    browserSync({
-        proxy: "landingpages.dev"
-    });
-});
-
 var env,
     jsSources,
     sassSources,
@@ -34,7 +28,7 @@ var env,
     hubspotFile = 'cccland', //used for .html file and for hubspot folders
     phpSources;
 
-env = 'production';
+env = 'development';
 
 if (env==='development') {
   outputDir = 'builds/development/';
@@ -64,6 +58,12 @@ phpSources = ['builds/development/*.php','builds/development/*/*.php'];
 sassSources = ['components/sass/ccclandstyle.scss'];
 htmlSources = [outputDir + '*.html'];
 
+gulp.task('browser-sync', function() {
+    browserSync({
+        proxy: "projects.dev"
+    });
+});
+
 gulp.task('jsFooter', function() {
   return gulp.src(jsFooterSources)
     .pipe(concat('footerscript.js'))
@@ -83,9 +83,10 @@ gulp.task('jsHeader', function() {
 });
 
 gulp.task('compass', function() {
-  return gulp.src(sassSources)
+  gulp.src(sassSources)
     .pipe(compass({
-      sass: 'components/sass',
+      project_path: "./",
+      sass: 'components/sass/',
       logging: true,
       css: outputDir + 'css',
       image: outputDir + 'images',
@@ -93,40 +94,15 @@ gulp.task('compass', function() {
       require: ['susy', 'breakpoint']
     })
     .on('error', gutil.log))
-    .pipe(gulp.dest( outputDir + 'css'))
+    //.pipe(gulp.dest( outputDir + 'css'))
     .pipe(reload({stream:true}));
-});
-
-gulp.task('svgstore', function () {
-  var svgs = gulp
-  .src('builds/development/svg/*.svg')
-  .pipe(svgmin())
-  .pipe(svgstore({ inlineSvg: true }))
-  .pipe(cheerio(function ($) {
-    $('svg').attr('style', 'display:none');
-  }));
-  function fileContents (filePath, file) {
-    return file.contents.toString();
-  }
-  return gulp
-  .src('builds/development/inc/svgs.php')
-  .pipe(inject(svgs, { transform: fileContents }))
-  .pipe(gulp.dest('builds/development/inc/svgs.php'));
 });
 
 gulp.task('watch', function() {
   gulp.watch(jsFooterSources, ['jsFooter',browserSync.reload]);
   gulp.watch(jsHeaderSources, ['jsHeader',browserSync.reload]);
   gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass']);
-  gulp.watch('builds/development/svg/*.svg', ['svgstore']);
-  gulp.watch('builds/development/*.html', ['html',browserSync.reload]);
   gulp.watch(phpSources, [browserSync.reload]);
-});
-
-gulp.task('html', function() {
-  return gulp.src('builds/development/*.html')
-    .pipe(gulpif(env === 'production', minifyHTML()))
-    .pipe(gulpif(env === 'production', gulp.dest(outputDir)));
 });
 
 //copy php files to production
@@ -143,4 +119,10 @@ gulp.task('move', function() {
   .pipe(gulpif(env === 'production', gulp.dest(outputDir+'images')));
 });
 
-gulp.task('default', ['watch', 'svgstore', 'html', 'jsFooter', 'jsHeader','compass', 'move', 'movephp', 'browser-sync']);
+// Copy svgs to production
+gulp.task('movesvg', function() {
+  gulp.src('builds/development/svg/**/*.*')
+  .pipe(gulpif(env === 'production', gulp.dest(outputDir+'svg')));
+});
+
+gulp.task('default', ['watch', 'html', 'jsFooter', 'jsHeader','compass', 'move', 'movephp', , 'movesvg', 'browser-sync']);

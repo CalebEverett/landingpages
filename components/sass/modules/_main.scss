@@ -84,6 +84,21 @@
 	height: $testImgSize;
 }
 
+#claudia {
+	@include testImage('../images/claudia.jpg');
+	height: $testImgSize;
+}
+
+#danny {
+	@include testImage('../images/danny.jpg');
+	height: $testImgSize;
+}
+
+#joy {
+	@include testImage('../images/joy.gif');
+	height: $testImgSize;
+}
+
 #stephanie {
 	@include testImage('../images/stephanie.png');
 	height: $testImgSize;

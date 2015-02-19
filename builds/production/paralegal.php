@@ -19,7 +19,7 @@
     dataLayer.push({
       'event':'remarketingTriggered',
       'google_tag_params': {
-        'edu_pid': <?php echo $edu_pid ?>,
+        'edu_pid': 'pl',
         'edu_plocid': 'sa',
         'edu_pagetype': 'lp',
       }

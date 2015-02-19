@@ -19,7 +19,7 @@
     dataLayer.push({
       'event':'remarketingTriggered',
       'google_tag_params': {
-        'edu_pid': <?php echo $edu_pid ?>,
+        'edu_pid': 'pl',
         'edu_plocid': 'sa',
         'edu_pagetype': 'lp',
       }
@@ -30,7 +30,7 @@
   <article class="fullheight joseph">
     <div class="introcta">
       <p class="introtext">Scroll Down<br>to Learn More</p>
-      <a href="#contenttop" ><svg id="handarrow"><use xlink:href="#arrow"/></a>
+      <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
     <div class="titletext">
       <h1>Life is Good as a</h1>

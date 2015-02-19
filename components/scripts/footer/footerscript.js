@@ -22,14 +22,14 @@ var narrow = 400,
   $(window).resize(function() {
     var wheight = $(window).height()-$('#nav').height(); //get height of the window
     $('.fullheight').css('height', wheight);
-  }) //on resize
+  }); //on resize
 
   //window width
   var wwidth = $(window).width(); //get width of the window
 
   $(window).resize(function() {
-    var wwidth = $(window).width() //get width of the window
-  }) //on resize
+    var wwidth = $(window).width(); //get width of the window
+  }); //on resize
 
    //set up ScrollMagic
   var controller = new ScrollMagic({
@@ -49,15 +49,16 @@ var t1 = new TimelineMax();
 if(wwidth <= small) {
 
   t1.from(".introcta", 0.5, {opacity:0,delay:1.0})
-  .from(".introcta", 1.5, {marginBottom: wheight-$('.titletext').height()-$('.introcta').height(),ease: Bounce.easeOut});
+  .from(".introcta", 1.5, {marginBottom: wheight-$('.titletext').height()-$('.introcta').height(),ease: Bounce.easeOut})
+  .from("#handarrow", 1.0, {fill:'#1270C8',repeat:-1,yoyo:true});
 }
 
 else if (wwidth > small) {
   t1.from(".introcta", 0.5, {opacity:0,delay:0.5})
   .from(".introtext", 0.5, {opacity:0,delay:-.25})
   .from("#handarrow", 0.5, {opacity:0,delay:-.25})
-  .from(".introtext", 1.5, {marginRight: wwidth/2, ease:Bounce.easeOut});
-
+  .from(".introtext", 1.5, {marginRight: wwidth/2, ease:Bounce.easeOut})
+  .from("#handarrow", 1.0, {fill:'#1270C8',repeat:-1,yoyo:true});
 }
 
 //smooth scrolling
