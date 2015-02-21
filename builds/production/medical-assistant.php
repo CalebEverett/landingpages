@@ -27,10 +27,10 @@
   </script>
   <?php include 'inc/tagmanager.php';?> 
 <header>
-  <article class="fullheight joseph">
+  <article class="fullheight mastudent">
     <div class="introcta">
-      <p class="introtext">Scroll Down<br>to Learn More</p>
-      <a href="#contenttop" ><svg id="handarrow"><use xlink:href="#arrow"/></a>
+      <p class="introtext">Scroll Down <br class="show">to Learn More</p>
+      <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
     <div class="titletext">
       <h1>Start a<br>Rewarding Career<br>Helping Others as a</h1>

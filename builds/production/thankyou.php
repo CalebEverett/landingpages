@@ -24,11 +24,11 @@
       }
     });
   </script>
-  <?php include 'inc/tagmanager.php';?> 
+ <?php include 'inc/tagmanager.php';?> 
 <header>
   <nav id="nav">
     <div class="navcontent">
-      <div class="navitemone"><a href="http://careercalifornia.edu"><svg class="logo"><use xlink:href="#ccclogowhite" /></svg></a></div>
+      <div class="navitemone"><a href="http://careercalifornia.edu"><svg class="logo"><?php include 'svg/ccclogowhite.svg';?></a></div>
       <div class="navitemtwo"><a href="tel:+17147953915"><h2>714-795-3915</h2></a></div>
     </div>
   </nav>
@@ -49,6 +49,5 @@
 </main>
 <script type="text/javascript" src="//cdn.callrail.com/companies/251039821/d6ffaf4764e4c65a31e6/12/swap.js"></script>
 </body>
-<?php include 'thankyoufooter.php';?>
-<script src="js/footerscript.js"></script>
+<?php include 'inc/thankyoufooter.php';?>
 </footer>

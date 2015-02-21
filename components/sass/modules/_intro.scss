@@ -9,8 +9,15 @@ header {
     }
 
     .mfobchero {
-        @include backImageMfobc('../images/mfobchero.jpg');
+        @include backImageTop('../images/mfobchero.jpg');
+    }
 
+    .businesshero {
+        @include backImageTop('../images/businesshero.jpg');
+    }
+
+    .accountanthero {
+        @include backImageTop('../images/accountanthero.jpg');
     }
   
 

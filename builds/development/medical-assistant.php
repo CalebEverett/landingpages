@@ -29,7 +29,7 @@
 <header>
   <article class="fullheight mastudent">
     <div class="introcta">
-      <p class="introtext">Scroll Down<br>to Learn More</p>
+      <p class="introtext">Scroll Down <br class="show">to Learn More</p>
       <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
     <div class="titletext">

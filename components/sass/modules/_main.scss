@@ -99,6 +99,21 @@
 	height: $testImgSize;
 }
 
+#avigail {
+	@include testImage('../images/avigail.jpg');
+	height: $testImgSize;
+}
+
+#jaime {
+	@include testImage('../images/jaime.jpg');
+	height: $testImgSize;
+}
+
+#yadira {
+	@include testImage('../images/yadira.jpg');
+	height: $testImgSize;
+}
+
 #stephanie {
 	@include testImage('../images/stephanie.png');
 	height: $testImgSize;

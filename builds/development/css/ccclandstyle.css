@@ -308,7 +308,27 @@ header .mfobchero {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 17, ../../../components/sass/modules/_intro.scss */
+/* line 15, ../../../components/sass/modules/_intro.scss */
+header .businesshero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/businesshero.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 19, ../../../components/sass/modules/_intro.scss */
+header .accountanthero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/accountanthero.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 24, ../../../components/sass/modules/_intro.scss */
 header .fullheight {
   @inlcude clearfix;
   display: -webkit-flex;
@@ -319,7 +339,7 @@ header .fullheight {
   justify-content: flex-end;
 }
 @media (min-width: 600px) {
-  /* line 17, ../../../components/sass/modules/_intro.scss */
+  /* line 24, ../../../components/sass/modules/_intro.scss */
   header .fullheight {
     -webkit-flex-direction: column-reverse;
     flex-direction: column-reverse;
@@ -327,7 +347,7 @@ header .fullheight {
     justify-content: flex-start;
   }
 }
-/* line 31, ../../../components/sass/modules/_intro.scss */
+/* line 38, ../../../components/sass/modules/_intro.scss */
 header .fullheight .introcta {
   display: -webkit-flex;
   display: flex;
@@ -343,7 +363,7 @@ header .fullheight .introcta {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
 }
 @media (min-width: 600px) {
-  /* line 31, ../../../components/sass/modules/_intro.scss */
+  /* line 38, ../../../components/sass/modules/_intro.scss */
   header .fullheight .introcta {
     -webkit-justify-content: center;
     justify-content: center;
@@ -351,13 +371,13 @@ header .fullheight .introcta {
   }
 }
 @media (min-width: 960px) {
-  /* line 31, ../../../components/sass/modules/_intro.scss */
+  /* line 38, ../../../components/sass/modules/_intro.scss */
   header .fullheight .introcta {
     -webkit-justify-content: center;
     justify-content: center;
   }
 }
-/* line 46, ../../../components/sass/modules/_intro.scss */
+/* line 53, ../../../components/sass/modules/_intro.scss */
 header .fullheight .introcta .introtext {
   font-family: "Permanent Marker", sans-serif;
   color: #1270C8;
@@ -367,12 +387,12 @@ header .fullheight .introcta .introtext {
   margin: auto 0;
 }
 @media (min-width: 960px) {
-  /* line 46, ../../../components/sass/modules/_intro.scss */
+  /* line 53, ../../../components/sass/modules/_intro.scss */
   header .fullheight .introcta .introtext {
     color: #F69627;
   }
 }
-/* line 59, ../../../components/sass/modules/_intro.scss */
+/* line 66, ../../../components/sass/modules/_intro.scss */
 header .fullheight .introcta #handarrow {
   width: 70px;
   height: 70px;
@@ -382,22 +402,22 @@ header .fullheight .introcta #handarrow {
   padding-top: 10px;
 }
 @media (min-width: 960px) {
-  /* line 59, ../../../components/sass/modules/_intro.scss */
+  /* line 66, ../../../components/sass/modules/_intro.scss */
   header .fullheight .introcta #handarrow {
     fill: #F69627;
   }
 }
-/* line 71, ../../../components/sass/modules/_intro.scss */
+/* line 78, ../../../components/sass/modules/_intro.scss */
 header .fullheight .introcta #handarrow:hover {
   fill: #F69627;
 }
 @media (min-width: 960px) {
-  /* line 71, ../../../components/sass/modules/_intro.scss */
+  /* line 78, ../../../components/sass/modules/_intro.scss */
   header .fullheight .introcta #handarrow:hover {
     fill: #1270C8;
   }
 }
-/* line 82, ../../../components/sass/modules/_intro.scss */
+/* line 89, ../../../components/sass/modules/_intro.scss */
 header .fullheight .titletext {
        /* @include display-flex;
         @include flex-direction(row);
@@ -420,12 +440,12 @@ header .fullheight .titletext {
   width: 100%;
 }
 @media (min-width: 600px) {
-  /* line 82, ../../../components/sass/modules/_intro.scss */
+  /* line 89, ../../../components/sass/modules/_intro.scss */
   header .fullheight .titletext {
     background-image: none;
   }
 }
-/* line 102, ../../../components/sass/modules/_intro.scss */
+/* line 109, ../../../components/sass/modules/_intro.scss */
 header .fullheight .titletext h1 {
   color: #F69627;
   text-align: left;
@@ -434,24 +454,24 @@ header .fullheight .titletext h1 {
   font-size: 1.5em;
 }
 @media (min-width: 600px) {
-  /* line 102, ../../../components/sass/modules/_intro.scss */
+  /* line 109, ../../../components/sass/modules/_intro.scss */
   header .fullheight .titletext h1 {
     text-shadow: #000000 1px 1px 1px;
   }
 }
 @media (min-width: 960px) {
-  /* line 102, ../../../components/sass/modules/_intro.scss */
+  /* line 109, ../../../components/sass/modules/_intro.scss */
   header .fullheight .titletext h1 {
     font-size: 3em;
   }
 }
 @media (min-width: 600px) {
-  /* line 120, ../../../components/sass/modules/_intro.scss */
+  /* line 127, ../../../components/sass/modules/_intro.scss */
   header .fullheight .titletext .ma {
     color: #F69627 !important;
   }
 }
-/* line 125, ../../../components/sass/modules/_intro.scss */
+/* line 132, ../../../components/sass/modules/_intro.scss */
 header .fullheight .titletext h2 {
   color: #1270C8;
   font-family: "Slabo 27px", serif;
@@ -460,19 +480,19 @@ header .fullheight .titletext h2 {
   font-size: 1.75em;
 }
 @media (min-width: 600px) {
-  /* line 125, ../../../components/sass/modules/_intro.scss */
+  /* line 132, ../../../components/sass/modules/_intro.scss */
   header .fullheight .titletext h2 {
     text-shadow: #000000 1px 1px 1px;
   }
 }
 @media (min-width: 600px) {
-  /* line 125, ../../../components/sass/modules/_intro.scss */
+  /* line 132, ../../../components/sass/modules/_intro.scss */
   header .fullheight .titletext h2 {
     text-align: left;
   }
 }
 @media (min-width: 960px) {
-  /* line 125, ../../../components/sass/modules/_intro.scss */
+  /* line 132, ../../../components/sass/modules/_intro.scss */
   header .fullheight .titletext h2 {
     font-size: 5em;
   }
@@ -1052,6 +1072,57 @@ body form.hs-form .hs-form-field ul.inputs-list {
 }
 
 /* line 102, ../../../components/sass/modules/_main.scss */
+#avigail {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/avigail.jpg");
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+/* line 107, ../../../components/sass/modules/_main.scss */
+#jaime {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/jaime.jpg");
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+/* line 112, ../../../components/sass/modules/_main.scss */
+#yadira {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/yadira.jpg");
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 200px;
+}
+
+/* line 117, ../../../components/sass/modules/_main.scss */
 #stephanie {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/stephanie.png");
   -moz-border-radius: 50%;
@@ -1068,7 +1139,7 @@ body form.hs-form .hs-form-field ul.inputs-list {
   height: 200px;
 }
 
-/* line 107, ../../../components/sass/modules/_main.scss */
+/* line 122, ../../../components/sass/modules/_main.scss */
 #toni {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../images/toni.jpg");
   -moz-border-radius: 50%;
@@ -1158,11 +1229,9 @@ footer ul li .footericon {
 /* line 21, ../../../components/sass/modules/_footer.scss */
 footer ul li .footericon:hover {
   fill: #F69627;
-  height: 60px;
-  width: 60px;
 }
 
-/* line 35, ../../../components/sass/modules/_footer.scss */
+/* line 33, ../../../components/sass/modules/_footer.scss */
 #thankyoufoot {
   position: fixed;
   bottom: 0;

@@ -7,7 +7,7 @@
   <meta name="author" content="Career College of California">
   <meta name="description" content="Career College of California Medical Front Office with Billing and Coding Program Information">
   <link id="favicon" rel="shortcut icon" href="../images/favicon.png" />
-  <title>Medical Front Office with Billing and Coding Program - Career College of California - Santa Ana</title>
+  <title>Medical Front Office with Billing and Coding Program</title>
   <link rel="stylesheet" href='css/ccclandstyle.css'>
   <script src="js/headerscript.js"></script>
   <meta id="meta" name="viewport" content="width=device-width initial-scale=1.0" />

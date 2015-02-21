@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="author" content="Career College of California">
-  <meta name="description" content="Career College of California Program Information">
+  <meta name="description" content="Learn how to start a promising career as a Paralegal. Earn your certificate in 8 months. Professional instruction by practicing professionals.">
   <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
-  <title>Paralegal Certificate Program - Career College of California - Santa Ana</title>
+  <title>Paralegal - Certificate Program | Career College of California</title>
   <link rel="stylesheet" href='css/ccclandstyle.css'>
   <script src="js/headerscript.js"></script>
   <meta id="meta" name="viewport" content="width=device-width initial-scale=1.0" />
@@ -29,8 +29,8 @@
 <header>
   <article class="fullheight joseph">
     <div class="introcta">
-      <p class="introtext">Scroll Down<br>to Learn More</p>
-      <a href="#contenttop" ><svg id="handarrow"><use xlink:href="#arrow"/></a>
+      <p class="introtext">Scroll Down <br class="show">to Learn More</p>
+      <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
     <div class="titletext">
       <h1>Life is Good as a</h1>
@@ -44,7 +44,7 @@
   role="dialog" aria-hidden="true">
   <div class="modal-inner">
     <div class="modal-content">
-    <?php include 'inc/formheader.php';?>  
+    <?php include '/lp/inc/formheader.php';?>  
       <script class="hsform">
         hbspt.forms.create({ 
           portalId: '164638',

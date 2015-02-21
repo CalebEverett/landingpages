@@ -20,10 +20,18 @@ footer {
 
           &:hover{
             fill: $orange;
-            height: 60px;
-            width: 60px;
           }
         }
+
+        .facebook {
+          fill: $light;
+          height: 40px;
+          width: 40px;
+
+          &:hover{
+            fill: $orange;
+          }
+        }        
 
                         
       } //li

@@ -28,7 +28,7 @@ var env,
     hubspotFile = 'cccland', //used for .html file and for hubspot folders
     phpSources;
 
-env = 'development';
+env = 'production';
 
 if (env==='development') {
   outputDir = 'builds/development/';
@@ -125,4 +125,4 @@ gulp.task('movesvg', function() {
   .pipe(gulpif(env === 'production', gulp.dest(outputDir+'svg')));
 });
 
-gulp.task('default', ['watch', 'html', 'jsFooter', 'jsHeader','compass', 'move', 'movephp', , 'movesvg', 'browser-sync']);
+gulp.task('default', ['watch', 'jsFooter', 'jsHeader','compass', 'move', 'movephp', 'movesvg', 'browser-sync']);
