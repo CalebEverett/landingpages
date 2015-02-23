@@ -29,11 +29,11 @@
 <header>
   <article class="fullheight joseph">
     <div class="introcta">
-      <p class="introtext">Scroll Down <br class="show">to Learn More</p>
+      <p class="introtext">Scroll Down <br class="showSmall">to Learn More</p>
       <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
-    <div class="titletext">
-      <h1>Life is Good as a</h1>
+    <div class="titletext left">
+      <h1>Life is Good <br class="showSmall">as a</h1>
       <h2>Paralegal</h2>
     </div>
   </article>

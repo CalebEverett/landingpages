@@ -29,12 +29,12 @@
 <header>
   <article class="fullheight businesshero">
     <div class="introcta">
-      <p class="introtext">Scroll Down<br>to Learn More</p>
+      <p class="introtext">Scroll Down <br class="showSmall">to Learn More</p>
       <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
     <div class="titletext">
       <h1>Start a Promising<br>Career in</h1>
-      <h2>Business Office Administration</h2>
+      <h2>Business Office<br class="hideSmall"> Administration</h2>
     </div>
   </article>
 <?php include 'inc/nav.php';?>
@@ -70,7 +70,7 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 </div>
 </section>
 <article id="contenttop">
-  <h1>8 Month Bussiness Office Administration Program in Santa Ana, California</h1>
+  <h1>8 Month Business Office Administration Program in Santa Ana, California</h1>
   <p>From small businesses to large multi-national corporations, every organization needs capable administration professionals.</p>
   <p>If you’re an organized, responsible individual interested in business and in starting a rewarding professional career (<strong>without spending years in school</strong>), you owe it to yourself to consider a future in business office administration. </p>
   <h2>Becoming A Qualified Business Professional</h2>

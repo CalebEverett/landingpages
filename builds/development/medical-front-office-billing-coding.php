@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="author" content="Career College of California">
   <meta name="description" content="Career College of California Medical Front Office with Billing and Coding Program Information">
-  <link id="favicon" rel="shortcut icon" href="../images/favicon.png" />
+  <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
   <title>Medical Front Office with Billing and Coding Program</title>
   <link rel="stylesheet" href='css/ccclandstyle.css'>
   <script src="js/headerscript.js"></script>
@@ -29,10 +29,10 @@
   <header>
     <article class="fullheight mfobchero">
       <div class="introcta">
-        <p class="introtext">Scroll Down <br class="show">to Learn More</p>
+        <p class="introtext">Scroll Down <br class="showSmall">to Learn More</p>
         <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
       </div>
-      <div class="titletext">
+      <div class="titletext left">
         <h1>Join a Growing Field</h1>
         <h2 class="mfobc">Medical Front Office<br>with Billing &amp; Coding</h2>
       </div>

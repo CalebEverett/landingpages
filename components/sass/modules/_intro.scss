@@ -22,20 +22,20 @@ header {
   
 
     .fullheight {
-
         @inlcude clearfix;
         @include display-flex;
         @include flex-direction(column);
         @include justify-content(flex-end);
 
         @include breakpoint($small) {
+            @include clearfix;
             @include flex-direction(column-reverse);
-            @include justify-content(flex-start);
-
+            @include justify-content(flex-end);
         }
 
 
         .introcta {
+            @include clearfix;
             @include display-flex;
             @include flex-direction(row);
             @include justify-content(center);
@@ -43,113 +43,87 @@ header {
 
             @include breakpoint($small){
                 @include justify-content(center);
-                margin-top: 25px;
-            }
-
-            @include breakpoint($medium){
-                @include justify-content(center);
             }
 
             .introtext {
                 font-family: $fontmarker;
-                color: $blue;
-                font-size: 1.25em;
+                color: $orange;
+                font-size: 1.0em;
                 text-align: left;
                 padding: 0;
                 margin: auto 0;
 
-                @include breakpoint($medium){
-                    color: $orange;
-                }
-            }
+            }//introtext
 
             #handarrow {
-                width: 70px;
-                height: 70px;
+                width: 55px;
+                height: 55px;
                 padding-left: 5px;
                 background: cover;
-                fill: $blue;
+                fill: $orange;
                 padding-top: 10px;
 
-                @include breakpoint($medium){
-                    fill: $orange;
-                }
+                
+            }//handarrow
 
-                &:hover{
-                    fill: $orange;
-                    @include breakpoint($medium){
-                        fill: $blue;
-                    }
-
-                }
-            }
-
-        }
+        }//introcta
 
         .titletext{
-       /* @include display-flex;
+        @include clearfix;
+        @include display-flex;
         @include flex-direction(row);
-        @include justify-content(space-between);
+        @include justify-content(center);
+        @include align-items(flex-end);
 
-        @include breakpoint(small){
-            @incluce clearfix;
-            @include justify-content(flex-start);
-        }
-
-        */
         padding: 2%;
-        padding-bottom: 1%;
         @include background-image(linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,0.7)));
         width: 100%;
 
         @include breakpoint($small) {
             @include background-image(none);
+            @include flex-direction(column);
+            //@include justify-content(flex-start);
+            flex-grow: 1;
+            
+
         }
 
         h1 {
             color: $orange;
             text-align: left;
             line-height: 1.0;
-            margin: 0 auto;
             font-size: 1.5em;
-            
-            @include breakpoint($small){
-                @include text-shadow(#000000 1px 1px 1px);
-            }
+            @include text-shadow(#989898 1px 1px 1px);
+            padding-right: 3px;
 
-            @include breakpoint($medium) {
-                font-size: 3em;
-            }       
+            @include breakpoint($medium){
+            font-size: 2.5em;
+            }
+            
 
             } //h1
-
-            @include breakpoint($small){
-            .ma {
-                   color: $orange !important;
-                }
-            }
 
             h2 {
                 color: $blue;
                 font-family: $headfontfamily;
-                margin: 0 auto;
                 text-align: right;
                 font-size: 1.75em;
-             
-                @include breakpoint($small){
-                   @include text-shadow(#000000 1px 1px 1px);
+                margin-top: 0;
+                @include text-shadow(#989898 1px 1px 1px);
+
+                @include breakpoint($medium){
+                font-size: 2.75em;
                 }
-
-                @include breakpoint($small){
-                    text-align: left;
-                }
-
-
-                @include breakpoint($medium) {
-                    font-size: 5em;
-                }              
 
                 } //h2
-                }//titletext
-                } //fullheight
-                } //header
+        }//titletext
+
+        .left {
+            @include breakpoint($small) {
+                @include align-items(flex-start);
+            }
+        }
+
+
+    } //fullheight
+} //header

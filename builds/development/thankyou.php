@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="author" content="Career College of California">
   <meta name="description" content="Career College of California Program Information">
-  <link id="favicon" rel="shortcut icon" href="/images/favicon.png" />
+  <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
   <title>Request for Info Received - Career College of California - Santa Ana</title>
   <link rel="stylesheet" href='css/ccclandstyle.css'>
   <script src="js/headerscript.js"></script>

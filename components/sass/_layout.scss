@@ -59,10 +59,27 @@ body {
         }
     }
 
+.hideSmall {
+        display: none;
+
+        @include breakpoint($small){
+              display: inline;      
+        }
+    }
+
+
 .show {
         display: block;
 
         @include breakpoint($medium){
+              display: none;      
+        }
+    }
+
+.showSmall {
+        display: block;
+
+        @include breakpoint($small){
               display: none;      
         }
     }

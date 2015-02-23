@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="author" content="Career College of California">
   <meta name="description" content="Career College of California Medical Assistant Program Information">
-  <link id="favicon" rel="shortcut icon" href="../images/favicon.png" />
+  <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
   <title>Medical Assistant Program - Career College of California - Santa Ana</title>
   <link rel="stylesheet" href='css/ccclandstyle.css'>
   <script src="js/headerscript.js"></script>
@@ -29,11 +29,11 @@
 <header>
   <article class="fullheight mastudent">
     <div class="introcta">
-      <p class="introtext">Scroll Down <br class="show">to Learn More</p>
+      <p class="introtext">Scroll Down <br class="showSmall">to Learn More</p>
       <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
-    <div class="titletext">
-      <h1>Start a<br>Rewarding Career<br>Helping Others as a</h1>
+    <div class="titletext left">
+      <h1>Start a Career<br>Helping Others as a</h1>
       <h2 class="ma">Medical Assistant</h2>
     </div>
   </article>

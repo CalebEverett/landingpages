@@ -29,12 +29,12 @@
 <header>
   <article class="fullheight accountanthero">
     <div class="introcta">
-      <p class="introtext">Scroll Down<br>to Learn More</p>
+     <p class="introtext">Scroll Down <br class="showSmall">to Learn More</p>
       <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
     <div class="titletext">
       <h1>Get Your Career<br>on Track as an</h1>
-      <h2>Accounting Professional</h2>
+      <h2>Accounting<br class="hideSmall"> Professional</h2>
     </div>
   </article>
 <?php include 'inc/nav.php';?>
