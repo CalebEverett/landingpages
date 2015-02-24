@@ -41,10 +41,6 @@ header {
             @include justify-content(center);
             @include background-image(linear-gradient(top, rgba(255,255,255,0.7), rgba(255,255,255,0.7)));
 
-            @include breakpoint($small){
-                @include justify-content(center);
-            }
-
             .introtext {
                 font-family: $fontmarker;
                 color: $orange;
@@ -83,7 +79,7 @@ header {
             @include background-image(none);
             @include flex-direction(column);
             //@include justify-content(flex-start);
-            flex-grow: 1;
+            @include flex-grow(1);
             
 
         }

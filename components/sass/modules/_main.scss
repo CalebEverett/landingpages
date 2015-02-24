@@ -114,6 +114,11 @@
 	height: $testImgSize;
 }
 
+#leslie {
+	@include testImage('../images/leslie.jpg');
+	height: $testImgSize;
+}
+
 #stephanie {
 	@include testImage('../images/stephanie.png');
 	height: $testImgSize;

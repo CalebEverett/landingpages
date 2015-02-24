@@ -560,9 +560,7 @@ $(window).load(function() {
     $(".loader").fadeOut("slow");
   });
 
-
 $(function() {
-
 
 //screensize breakpoints
 var narrow = 400,
@@ -587,6 +585,24 @@ var narrow = 400,
     var wwidth = $(window).width(); //get width of the window
   }); //on resize
 
+    //animate intro call to action
+    var t1 = new TimelineMax();
+
+    if(wwidth <= small) {
+
+      t1.from(".introcta", 0.5, {opacity:0,delay:1.0})
+      .from(".introcta", 1.5, {marginBottom: wheight-$('.titletext').height()-$('.introcta').height(),ease: Bounce.easeOut})
+      .from("#handarrow", 1.0, {fill:'#1270C8',repeat:-1,yoyo:true});
+    }
+
+    else if (wwidth > small) {
+      t1.from(".introcta", 0.5, {opacity:0,delay:0.5})
+      .from(".introtext", 0.5, {opacity:0,delay:-.25})
+      .from("#handarrow", 0.5, {opacity:0,delay:-.25})
+      .from(".introtext", 1.5, {marginRight: wwidth/2, ease:Bounce.easeOut})
+      .from("#handarrow", 1.0, {fill:'#1270C8',repeat:-1,yoyo:true});
+    }
+
    //set up ScrollMagic
   var controller = new ScrollMagic({
     globalSceneOptions: {
@@ -598,24 +614,6 @@ var narrow = 400,
   var pin = new ScrollScene({
     triggerElement: '#nav',
   }).setPin('#nav').addTo(controller);
-
-//animate intro call to action
-var t1 = new TimelineMax();
-
-if(wwidth <= small) {
-
-  t1.from(".introcta", 0.5, {opacity:0,delay:1.0})
-  .from(".introcta", 1.5, {marginBottom: wheight-$('.titletext').height()-$('.introcta').height(),ease: Bounce.easeOut})
-  .from("#handarrow", 1.0, {fill:'#1270C8',repeat:-1,yoyo:true});
-}
-
-else if (wwidth > small) {
-  t1.from(".introcta", 0.5, {opacity:0,delay:0.5})
-  .from(".introtext", 0.5, {opacity:0,delay:-.25})
-  .from("#handarrow", 0.5, {opacity:0,delay:-.25})
-  .from(".introtext", 1.5, {marginRight: wwidth/2, ease:Bounce.easeOut})
-  .from("#handarrow", 1.0, {fill:'#1270C8',repeat:-1,yoyo:true});
-}
 
 //smooth scrolling
 $(function() {
@@ -637,44 +635,41 @@ $(function() {
   var isTouch = 'ontouchstart' in document.documentElement;
   if(!isTouch){
 
-//animate strong text
-$('strong').each(function(){
-  var currentStrong = $(this);
+    //animate strong text
+    $('strong').each(function(){
+      var currentStrong = $(this);
 
-  var tweenStrong = new TimelineMax()
-  .from(currentStrong, 0.25, {fontWeight: 300})
-  .to(currentStrong, 0.25, {textShadow:"5px 0px 10px yellow, 0px 5px 10px yellow, -5px 0px 10px yellow, 0px -5px 10px yellow"});
+      var tweenStrong = new TimelineMax()
+      .from(currentStrong, 0.25, {fontWeight: 300})
+      .to(currentStrong, 0.25, {textShadow:"5px 0px 10px yellow, 0px 5px 10px yellow, -5px 0px 10px yellow, 0px -5px 10px yellow"});
 
-  var scene = new ScrollScene({triggerElement: currentStrong, offset: -$(window).height()*0.75})
-  .setTween(tweenStrong)
-  .addTo(controller);
+      var scene = new ScrollScene({triggerElement: currentStrong, offset: -$(window).height()*0.75})
+      .setTween(tweenStrong)
+      .addTo(controller);
 
-});//animate strong text
+    });//animate strong text
 
-//animate testimonials
-$('.testimonial').each(function(){
-  var currentTest = $(this);
+    //animate testimonials
+    $('.testimonial').each(function(){
+      var currentTest = $(this);
 
-  var testOrigin = {
-    repeat: 0,
-    yoyo: false,
-    bottom: 0,
-    opacity: 0.5,
-    scale: 0.5,
-    ease: Back.easeOut
-  }
+      var testOrigin = {
+        repeat: 0,
+        yoyo: false,
+        bottom: 0,
+        opacity: 0.5,
+        scale: 0.5,
+        ease: Back.easeOut
+      }
 
-  var tweenTest = new TimelineMax()
-  .staggerFrom(currentTest, 0.5, testOrigin, 0.25);
+      var tweenTest = new TimelineMax()
+      .staggerFrom(currentTest, 0.5, testOrigin, 0.25);
 
-  var scene = new ScrollScene({triggerElement: currentTest, offset: -$(window).height()*0.75})
-  .setTween(tweenTest)
-  .addTo(controller);
+      var scene = new ScrollScene({triggerElement: currentTest, offset: -$(window).height()*0.75})
+      .setTween(tweenTest)
+      .addTo(controller);
 
-});//animate testimonials
-
-
-
+    });//animate testimonials
 
   }//not a touch device
 

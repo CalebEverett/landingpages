@@ -44,7 +44,7 @@
   role="dialog" aria-hidden="true">
   <div class="modal-inner">
     <div class="modal-content">
-    <?php include '/lp/inc/formheader.php';?>  
+    <?php include 'inc/formheader.php';?>  
       <script class="hsform">
         hbspt.forms.create({ 
           portalId: '164638',
