@@ -19,6 +19,10 @@ header {
     .accountanthero {
         @include backImageTop('../images/accountanthero.jpg');
     }
+
+    .gibillhero {
+        @include backImageTop('../images/gibillhero.jpg');
+    }
   
 
     .fullheight {
