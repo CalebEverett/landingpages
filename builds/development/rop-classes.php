@@ -8,9 +8,8 @@
   <meta name="description" content="Career College of California offers accelerated, hands-on career training programs in the medical, legal and business fields.">
   <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
   <title>ROP Classes - Training Programs | Career College of California</title>
-  <link rel="stylesheet" href='css/ccclandstyle.css'>
-  <script src="js/headerscript.js"></script>
   <meta id="meta" name="viewport" content="width=device-width initial-scale=1.0" />
+  <?php include 'inc/headerscripts.php';?>
 </head>
 <body>
   <div class="loader"></div>
@@ -45,12 +44,12 @@
   <div class="modal-inner">
     <div class="modal-content">
     <?php include 'inc/formheader.php';?>  
-      <script class="hsform">
+      <script>
         hbspt.forms.create({ 
           portalId: '164638',
           formId: <?php echo $hsformid; ?>,
-          css:'',
-          formInstanceId: 'modal'
+          formInstanceId: 'modal',
+          css:''
         });
       </script>
       <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
@@ -114,12 +113,12 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 </article>
 <aside class="hide" id="formaside">
   <?php include 'inc/formheader.php';?>
-  <script class="hsform">
+  <script>
     hbspt.forms.create({ 
       portalId: '164638',
       formId: <?php echo $hsformid ?>,
-      css:'',
-      formInstanceId: 'form'
+      formInstanceId: 'form',
+      css:''
     });
   </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
@@ -133,4 +132,4 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 </main>
 <script type="text/javascript" src="//cdn.callrail.com/companies/251039821/d6ffaf4764e4c65a31e6/12/swap.js"></script>
 </body>
-<?php include 'inc/footer.php';?></hbspt.forms.create({>
+<?php include 'inc/footer.php';?>

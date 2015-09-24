@@ -7,9 +7,8 @@
   <meta name="description" content="Career College of California Program Information">
   <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
   <title>Request for Info Received - Career College of California - Santa Ana</title>
-  <link rel="stylesheet" href='css/ccclandstyle.css'>
-  <script src="js/headerscript.js"></script>
   <meta id="meta" name="viewport" content="width=device-width initial-scale=1.0" />
+  <?php include 'inc/headerscripts.php';?>
 </head>
 <body>
   <div class="loader"></div>

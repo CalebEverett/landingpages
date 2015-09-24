@@ -8,9 +8,8 @@
   <meta name="description" content="Learn how to start a promising career in Business Office Administration in about 8 months. Hands-on instruction, small classes, intensive placement assistance.">
   <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
   <title>Business Office Administration - Career Training Program</title>
-  <link rel="stylesheet" href='css/ccclandstyle.css'>
-  <script src="js/headerscript.js"></script>
   <meta id="meta" name="viewport" content="width=device-width initial-scale=1.0" />
+  <?php include 'inc/headerscripts.php';?>
 </head>
 <body>
   <div class="loader"></div>
@@ -49,8 +48,8 @@
         hbspt.forms.create({ 
           portalId: '164638',
           formId: <?php echo $hsformid; ?>,
-          css:'',
-          formInstanceId: 'modal'
+          formInstanceId: 'modal',
+          css:''
         });
       </script>
       <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
@@ -118,12 +117,12 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 </article>
 <aside class="hide" id="formaside">
   <?php include 'inc/formheader.php';?>
-  <script class="hsform">
+  <script>
     hbspt.forms.create({ 
       portalId: '164638',
       formId: <?php echo $hsformid ?>,
-      css:'',
-      formInstanceId: 'form'
+      formInstanceId: 'form',
+      css:''
     });
   </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>

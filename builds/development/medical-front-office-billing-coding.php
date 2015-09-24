@@ -8,9 +8,8 @@
   <meta name="description" content="Career College of California Medical Front Office with Billing and Coding Program Information">
   <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
   <title>Medical Front Office with Billing and Coding Program</title>
-  <link rel="stylesheet" href='css/ccclandstyle.css'>
-  <script src="js/headerscript.js"></script>
   <meta id="meta" name="viewport" content="width=device-width initial-scale=1.0" />
+  <?php include 'inc/headerscripts.php';?>
 </head>
 <body>
   <div class="loader"></div>
@@ -45,12 +44,12 @@
     <div class="modal-inner">
       <div class="modal-content">
         <?php include 'inc/formheader.php';?>  
-        <script class="hsform">
+        <script>
           hbspt.forms.create({ 
             portalId: '164638',
             formId: <?php echo $hsformid; ?>,
-            css:'',
-            formInstanceId: 'modal'
+            formInstanceId: 'modal',
+            css:''
           });
         </script>
         <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
@@ -113,7 +112,7 @@
   </div>
   <p>Upon completing this program, you’ll have the tools to succeed in just about any medical office.</p>
   <h2>Convenient Day &amp; Evening Schedules</h2>
-  <p>At CCC, we know the time pressures our students face. Many students are working and/or raising families while going to school. Our programs are specifically designed to <strong>fit the needs of busy, adult learners</strong>. As a Medical Assistant student, you can choose from either the day or evening schedule - whichever works best for you!</p>
+  <p>At CCC, we know the time pressures our students face. Many students are working and/or raising families while going to school. Our programs are specifically designed to <strong>fit the needs of busy, adult learners</strong>. As a Medical Front Office with Billing & Coding student, you can choose from either the day or evening schedule - whichever works best for you!</p>
   <ul>
     <li>The daytime program can be completed in <strong>9 months</strong></li>
     <li>The evening program can be completed in <strong>11 months</strong></li>
@@ -134,12 +133,12 @@
 </article>
 <aside class="hide" id="formaside">
   <?php include 'inc/formheader.php';?>
-  <script class="hsform">
+  <script>
     hbspt.forms.create({ 
       portalId: '164638',
       formId: <?php echo $hsformid ?>,
-      css:'',
-      formInstanceId: 'form'
+      formInstanceId: 'form',
+      css:''
     });
   </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>

@@ -5,12 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="author" content="Career College of California">
-  <meta name="description" content="Learn how to start a promising career as a Paralegal. Earn your certificate in 8 months. Professional instruction by practicing professionals.">
+  <meta name="description" content="Learn how to start a promising career. Earn your certificate in 8 months. Professional instruction by practicing professionals.">
   <link id="favicon" rel="shortcut icon" href="images/favicon.png" />
   <title>Post-9/11 GI Bill | Career College of California</title>
-  <link rel="stylesheet" href='css/ccclandstyle.css'>
-  <script src="js/headerscript.js"></script>
   <meta id="meta" name="viewport" content="width=device-width initial-scale=1.0" />
+  <?php include 'inc/headerscripts.php';?>
 </head>
 <body>
   <div class="loader"></div>
@@ -45,12 +44,12 @@
   <div class="modal-inner">
     <div class="modal-content">
     <?php include 'inc/formheader.php';?>  
-      <script class="hsform">
+      <script>
         hbspt.forms.create({ 
           portalId: '164638',
           formId: <?php echo $hsformid; ?>,
-          css:'',
-          formInstanceId: 'modal'
+          formInstanceId: 'modal',
+          css:''
         });
       </script>
       <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
@@ -85,8 +84,8 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
   <h2>What is the Post-9/11 GI Bill and what do you receive?</h2>
   <p>It’s an <strong>educational benefit for individuals who served on active duty</strong> after September 10, 2001. You will receive:</p>
   <ul>
-    <li>A tuition and fee payment that is paid to CCC</li>
-    <li>Monthly housing allowance</li>
+    <li>Funding for your tuition</li>
+    <li>Monthly allowance for housing and supplies</li>
   </ul>
   <p><small>*The amount you receive depends on how much you qualify for.</small></p>
 
@@ -109,7 +108,7 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
   </div>
 
   <h2>Get the Support You Need to Launch a Successful Career</h2>
-  <p>At CCC, we know that paralegal training is about more than a certificate to hang on the wall – <strong>it’s about getting a professional career you’re proud of</strong>. CCC is dedicated to supporting you throughout your career. The capable, hard working professionals in the Career Services department will be there to make sure you know how to get interviews and present yourself well in them.</p>
+  <p>At CCC, we know that career training is about more than a certificate to hang on the wall – <strong>it’s about getting a professional career you’re proud of</strong>. CCC is dedicated to supporting you throughout your career. The capable, hard working professionals in the Career Services department will be there to make sure you know how to get interviews and present yourself well in them.</p>
 
   <div class="testimonial">
     <div class="testimage" id="AM3471"></div><p>&#8220The enrollment process was easy. The staff connected me with the right resources to be able to use my benefits for my education.&#8221</p>
@@ -122,19 +121,19 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 </article>
 <aside class="hide" id="formaside">
   <?php include 'inc/formheader.php';?>
-  <script class="hsform">
+  <script>
     hbspt.forms.create({ 
       portalId: '164638',
       formId: <?php echo $hsformid ?>,
-      css:'',
-      formInstanceId: 'form'
+      formInstanceId: 'form',
+      css:''
     });
   </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
 </aside>
 <?php include 'inc/accreditations.php';?>
 <article class="show">
-  <h2>Can You See Yourself as a Paralegal?</h2>
+  <h2>Can You See Yourself as a Working Professional</h2>
   <p class="lastp"><strong>Get info today by calling, filling out the form on this page, or visiting us on campus.</strong></p>
   <a href="#modalForm" class="inline-button">Get Info</a>
 </article>
