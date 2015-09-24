@@ -128,3 +128,13 @@
 	@include testImage('../images/toni.jpg');
 	height: $testImgSize;
 }
+
+#RC8317 {
+	@include testImage('../images/RC8317.jpg');
+	height: $testImgSize;
+}
+
+#AM3471 {
+	@include testImage('../images/AM3471.jpg');
+	height: $testImgSize;	
+}
