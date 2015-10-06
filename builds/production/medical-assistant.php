@@ -46,10 +46,10 @@
     <?php include 'inc/formheader.php';?>  
       <script>
         hbspt.forms.create({ 
+          css:'',
           portalId: '164638',
           formId: <?php echo $hsformid; ?>,
-          formInstanceId: 'modal',
-          css:''
+          formInstanceId: '1'
         });
       </script>
       <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
@@ -120,10 +120,10 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
   <?php include 'inc/formheader.php';?>
   <script>
     hbspt.forms.create({ 
+      css:'',
       portalId: '164638',
       formId: <?php echo $hsformid ?>,
-      formInstanceId: 'form',
-      css:''
+      formInstanceId: '2'
     });
   </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>

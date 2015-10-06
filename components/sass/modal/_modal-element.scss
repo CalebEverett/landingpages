@@ -4,6 +4,7 @@
 .modal--show {
 	@extend %modal;
 	@extend %modal-theme;
+	@extend %modal--transition-zoomIn;
 }
 
 .modal--fade {

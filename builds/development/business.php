@@ -39,35 +39,7 @@
 <?php include 'inc/nav.php';?>
 </header>
 <main id="maincopy">
-  <section class="modal--show" id="modalForm" tabindex="-1"
-  role="dialog" aria-hidden="true">
-  <div class="modal-inner">
-    <div class="modal-content">
-    <?php include 'inc/formheader.php';?>  
-      <script class="hsform">
-        hbspt.forms.create({ 
-          portalId: '164638',
-          formId: <?php echo $hsformid; ?>,
-          formInstanceId: 'modal',
-          css:''
-        });
-      </script>
-      <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
-    </div>
-  </div>
-  <a href="#!" class="modal-close" title="Close the form" data-close="Close"
-  data-dismiss="modal">Close this modal</a>
-</section>
-<section class="modal--show" id="modalPrivacy" tabindex="-1"
-role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-<div class="modal-inner">
-  <div class="modal-content">
-    <?php include 'inc/privacy.php';?>
-    <a href="#!" class="modal-close" title="Close this modal" data-close="Close"
-    data-dismiss="modal">?</a>
-  </div>
-</div>
-</section>
+<?php include 'inc/modals.php';?>
 <article id="contenttop">
   <h1>8 Month Business Office Administration Program in Santa Ana, California</h1>
   <p>From small businesses to large multi-national corporations, every organization needs capable administration professionals.</p>
@@ -114,17 +86,16 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
   <h2>Is a Career in Business Office Administration Right for You? Get More Information…</h2>
   <p>If you’re interested in learning more about a career in business office administration, and exploring whether Career College of California is a good fit for you, <strong>fill out the form on this page to receive more information or give us a call to speak with a friendly and knowledgeable CCC Admissions Representative.</strong></p>
   <div class="hide"><a href="#modalForm" class="inline-button">Get Info</a></div>
-</article>
 <aside class="hide" id="formaside">
   <?php include 'inc/formheader.php';?>
-  <script>
-    hbspt.forms.create({ 
-      portalId: '164638',
-      formId: <?php echo $hsformid ?>,
-      formInstanceId: 'form',
-      css:''
-    });
-  </script>
+      <script>
+        hbspt.forms.create({ 
+          css: '',
+          portalId: '164638',
+          formId: <?php echo $hsformid; ?>,
+          formInstanceId: '2'
+        });
+      </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
 </aside>
 <?php include 'inc/accreditations.php';?>

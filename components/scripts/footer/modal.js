@@ -1,4 +1,4 @@
-/*!
+/*
  * CSS Modal
  * http://drublic.github.com/css-modal
  *

@@ -32,12 +32,12 @@
 
 	// Header
 	header {
-		//border-bottom: 1px solid $modal-border-color;
-		//padding: 0 1.2em;
+		/*border-bottom: 1px solid $modal-border-color;
+		padding: 0 1.2em;
 
 		> h2 {
-			//margin: 0.5em 0;
-		}
+			margin: 0.5em 0;
+		}*/
 	}
 
 
@@ -71,7 +71,7 @@
 		&:after {
 			content: '\00d7';
 
-			background: $orange;
+			background: $modal-inner-background;
 
 			border-radius: $modal-border-radius;
 			padding: 2px 8px;
@@ -94,7 +94,7 @@
 		}
 
 		.modal-inner {
-			padding-top: 0em;
+			//padding-top: 3em;
 			-webkit-box-shadow: none;
 			        box-shadow: none;
 		}
@@ -102,10 +102,8 @@
 		.modal-close {
 			text-decoration: none;
 
-
 			&:after {
 				content: attr(data-close);
-				display: none;
 				font-size: 1em;
 				padding: 0.5em 1em;
 			}

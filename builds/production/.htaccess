@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+  # Options +FollowSymlinks
+    Options +SymLinksIfOwnerMatch
+    RewriteEngine On
+
+    # Access .php files without the extension
+    # http://www.abeautifulsite.net/access-pages-without-the-php-extension-using-htaccess/
+    RewriteCond %{SCRIPT_FILENAME} !-d
+    RewriteRule ^([^.]+)$ $1.php [NC,L]
+  # RewriteBase /
+</IfModule>

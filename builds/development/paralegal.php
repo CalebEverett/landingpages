@@ -1,4 +1,5 @@
 <?php $hsformid = "'545c7910-b015-4811-8d20-f84323b7012e'";?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -32,42 +33,14 @@
       <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
     <div class="titletext left">
-      <h1>Life is Good <br class="showSmall">as a</h1>
+      <h1>Start a Promising Career <br class="showSmall">as a</h1>
       <h2>Paralegal</h2>
     </div>
   </article>
 <?php include 'inc/nav.php';?>
 </header>
 <main id="maincopy">
-  <section class="modal--show" id="modalForm" tabindex="-1"
-  role="dialog" aria-hidden="true">
-  <div class="modal-inner">
-    <div class="modal-content">
-    <?php include 'inc/formheader.php';?>  
-      <script>
-        hbspt.forms.create({ 
-          portalId: '164638',
-          formId: <?php echo $hsformid; ?>,
-          formInstanceId: 'modal',
-          css:''
-        });
-      </script>
-      <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
-    </div>
-  </div>
-  <a href="#!" class="modal-close" title="Close the form" data-close="Close"
-  data-dismiss="modal">Close this modal</a>
-</section>
-<section class="modal--show" id="modalPrivacy" tabindex="-1"
-role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-<div class="modal-inner">
-  <div class="modal-content">
-    <?php include 'inc/privacy.php';?>
-    <a href="#!" class="modal-close" title="Close this modal" data-close="Close"
-    data-dismiss="modal">?</a>
-  </div>
-</div>
-</section>
+    <?php include 'inc/modals.php';?>
 <article id="contenttop">
   <h1>8 Month Paralegal Career Training Program in Santa Ana, California</h1>
   <p>Paralegals, sometimes called Legal Assistants, work as <strong>valued members of a legal team</strong>, often assisting lawyers with important trial and case preparations.</p>
@@ -119,14 +92,14 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 </article>
 <aside class="hide" id="formaside">
   <?php include 'inc/formheader.php';?>
-  <script>
-    hbspt.forms.create({ 
-      portalId: '164638',
-      formId: <?php echo $hsformid ?>,
-      formInstanceId: 'form',
-      css:''
-    });
-  </script>
+      <script>
+        hbspt.forms.create({ 
+          css: '',
+          portalId: '164638',
+          formId: <?php echo $hsformid; ?>,
+          formInstanceId: '2'
+        });
+      </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
 </aside>
 <?php include 'inc/accreditations.php';?>
@@ -139,3 +112,4 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 <script type="text/javascript" src="//cdn.callrail.com/companies/251039821/d6ffaf4764e4c65a31e6/12/swap.js"></script>
 </body>
 <?php include 'inc/footer.php';?>
+</html>

@@ -15,3 +15,7 @@
     <input id="chk-4" type="checkbox"/><label class="checks" for="chk-4">When can I start?</label>
   </div>
 </div>
+      <!--[if lte IE 8]>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>

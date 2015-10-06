@@ -1,5 +1,4 @@
-<?php $hsformid = array("'545c7910-b015-4811-8d20-f84323b7012e'","'9687166b-9eab-4e85-9157-dffd6a8208f0'");?>
-
+<?php $hsformid = "'545c7910-b015-4811-8d20-f84323b7012e'";?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -49,8 +48,8 @@
         hbspt.forms.create({ 
           css:'',
           portalId: '164638',
-          formId: <?php echo $hsformid[0]; ?>,
-          formInstanceId: '0'
+          formId: <?php echo $hsformid; ?>,
+          formInstanceId: '1'
         });
       </script> 
       <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
@@ -124,8 +123,8 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
     hbspt.forms.create({ 
       css:'',
       portalId: '164638',
-      formId: <?php echo $hsformid[1]; ?>,
-      formInstanceId: '1'
+      formId: <?php echo $hsformid; ?>,
+      formInstanceId: '2'
         });
   </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>

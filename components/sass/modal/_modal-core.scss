@@ -5,9 +5,9 @@ html {
 }
 
 // To prevent jumping <body> should not have any margin on top or bottom
-
 .has-overlay {
 	overflow: hidden;
+	height: auto;
 
 	> body {
 		height: 100%;
@@ -101,8 +101,9 @@ html {
 
 	// Content
 	.modal-content {
-		max-height: 700px;
 		position: relative;
+		max-height: none;
+		max-height: 80vh;
 		overflow-x: hidden;
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
@@ -144,7 +145,7 @@ html {
 			z-index: 10;
 		}
 
-		// Actual close button on modal
+		/*/ Actual close button on modal
 		&:after {
 			content: '\00d7';
 			position: absolute;
@@ -152,7 +153,7 @@ html {
 			right: 50%;
 			z-index: 20;
 			margin-right: -($modal-max-width / 2);
-		}
+		}*/
 	}
 
 
@@ -248,18 +249,20 @@ html {
 
 
 	// For small heights
-	@media screen and (max-height: 46em) and (min-width: $modal-small-breakpoint) {
+	/*@media screen and (max-height: 46em) and (min-width: $modal-small-breakpoint) {
 		.modal-content {
-		max-height: 600px
-	
+			//max-height: 340px;
+			max-height: 50vh;
 		}
 	}
 
 
 	@media screen and (max-height: 36em) and (min-width: $modal-small-breakpoint) {
 		.modal-content {
+			//max-height: 265px;
+			max-height: 40vh;
 		}
-	}
+	}*/
 
 
 	// Stackable Modals

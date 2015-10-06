@@ -39,35 +39,7 @@
     <?php include 'inc/nav.php';?>
   </header>
   <main id="maincopy">
-    <section class="modal--show" id="modalForm" tabindex="-1"
-    role="dialog" aria-hidden="true">
-    <div class="modal-inner">
-      <div class="modal-content">
-        <?php include 'inc/formheader.php';?>  
-        <script>
-          hbspt.forms.create({ 
-            portalId: '164638',
-            formId: <?php echo $hsformid; ?>,
-            formInstanceId: 'modal',
-            css:''
-          });
-        </script>
-        <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
-      </div>
-    </div>
-    <a href="#!" class="modal-close" title="Close the form" data-close="Close"
-    data-dismiss="modal">Close this modal</a>
-  </section>
-  <section class="modal--show" id="modalPrivacy" tabindex="-1"
-  role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-  <div class="modal-inner">
-    <div class="modal-content">
-      <?php include 'inc/privacy.php';?>
-      <a href="#!" class="modal-close" title="Close this modal" data-close="Close"
-      data-dismiss="modal">?</a>
-    </div>
-  </div>
-</section>
+<?php include 'inc/modals.php';?>
 <article id="contenttop">
   <h1>8 Month Medical Front Office with Billing &amp; Coding Career Training Program</h1>
   <p>Medical Front Office professionals play an important role in the wellness of others, without having direct contact with patients. Professionals in this field manage important medical records and help to bridge the gap between patients, doctors and insurance companies.</p>
@@ -133,14 +105,14 @@
 </article>
 <aside class="hide" id="formaside">
   <?php include 'inc/formheader.php';?>
-  <script>
-    hbspt.forms.create({ 
-      portalId: '164638',
-      formId: <?php echo $hsformid ?>,
-      formInstanceId: 'form',
-      css:''
-    });
-  </script>
+      <script>
+        hbspt.forms.create({ 
+          css: '',
+          portalId: '164638',
+          formId: <?php echo $hsformid; ?>,
+          formInstanceId: '2'
+        });
+      </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
 </aside>
 <?php include 'inc/accreditations.php';?>

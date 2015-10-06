@@ -11,7 +11,7 @@ body {
 	  	padding: 1em;
 	 	
 	 	@include breakpoint($medium){
-	    	@include span(8 of 12);
+	    	@include span(7 of 12);
 	    }
 
 	  } //article

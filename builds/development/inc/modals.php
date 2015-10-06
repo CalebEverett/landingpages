@@ -1,4 +1,26 @@
-<h1>Privacy Policy</h1>
+<section class="modal--show" id="modalForm" tabindex="-1"
+role="dialog" aria-hidden="true">
+<div class="modal-inner">
+  <div class="modal-content">
+    <?php include 'inc/formheader.php';?>
+    <script>
+      hbspt.forms.create({ 
+        css: '',
+        portalId: '164638',
+        formId: <?php echo $hsformid; ?>,
+        formInstanceId: '1'
+      });
+    </script>
+    <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
+  </div>
+</div>
+<a href="#!" data-target="#!" class="modal-close" title="Go to page" data-close="Close" data-dismiss="modal">?</a>
+</section>
+<section class="modal--show" id="modalPrivacy" tabindex="-1"
+role="dialog" aria-hidden="true">
+<div class="modal-inner">
+  <div class="modal-content">
+    <h1>Privacy Policy</h1>
     <p>This privacy policy sets out how the Career College of California uses and protects any information that you give Career College of California when you use this website.</p>
     <p>Career College of California is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.</p>
     <p>Career College of California may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. This policy is effective from January 1, 2015.</p>
@@ -28,3 +50,7 @@
     <p>We use traffic log cookies to identify which pages are being used. This helps us analyze data about web page traffic and improve our website in order to tailor it to customer needs. We only use this information for statistical analysis purposes and then the data is removed from the system.</p>
     <p>Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find useful and which you do not. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us.</p>
     <p>You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website.</p>
+  </div>
+</div>
+<a href="#!" data-target="#!" class="modal-close" title="Close privacy modal" data-close="Close" data-dismiss="modal">?</a>
+</section>
