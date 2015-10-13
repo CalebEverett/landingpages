@@ -49,4 +49,4 @@
 <script type="text/javascript" src="//cdn.callrail.com/companies/251039821/d6ffaf4764e4c65a31e6/12/swap.js"></script>
 </body>
 <?php include 'inc/thankyoufooter.php';?>
-</footer>
+</html>

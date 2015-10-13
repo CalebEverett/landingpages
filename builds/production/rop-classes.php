@@ -39,35 +39,7 @@
 <?php include 'inc/nav.php';?>
 </header>
 <main id="maincopy">
-  <section class="modal--show" id="modalForm" tabindex="-1"
-  role="dialog" aria-hidden="true">
-  <div class="modal-inner">
-    <div class="modal-content">
-    <?php include 'inc/formheader.php';?>  
-      <script>
-        hbspt.forms.create({ 
-          portalId: '164638',
-          formId: <?php echo $hsformid; ?>,
-          formInstanceId: 'modal',
-          css:''
-        });
-      </script>
-      <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
-    </div>
-  </div>
-  <a href="#!" class="modal-close" title="Close the form" data-close="Close"
-  data-dismiss="modal">Close this modal</a>
-</section>
-<section class="modal--show" id="modalPrivacy" tabindex="-1"
-role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-<div class="modal-inner">
-  <div class="modal-content">
-    <?php include 'inc/privacy.php';?>
-    <a href="#!" class="modal-close" title="Close this modal" data-close="Close"
-    data-dismiss="modal">?</a>
-  </div>
-</div>
-</section>
+<?php include 'inc/modals.php';?>
 <article id="contenttop">
   <h1>8 to 10 Month Career Training Programs in Santa Ana, Califoria</h1>
   <p>Career College of California’s programs <strong>prepare you for fast growing, rewarding careers in healthcare, business and law in as few as 8 months</strong>.  Our programs provide in depth, hands-on training in the skills today’s employers are looking for, all delivered in a supportive and engaging environment.</p>
@@ -113,14 +85,14 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 </article>
 <aside class="hide" id="formaside">
   <?php include 'inc/formheader.php';?>
-  <script>
-    hbspt.forms.create({ 
-      portalId: '164638',
-      formId: <?php echo $hsformid ?>,
-      formInstanceId: 'form',
-      css:''
-    });
-  </script>
+      <script>
+        hbspt.forms.create({ 
+          css: '',
+          portalId: '164638',
+          formId: <?php echo $hsformid; ?>,
+          formInstanceId: '2'
+        });
+      </script>
   <a href="#modalPrivacy" id="privacy">Privacy Policy</a>
 </aside>
 <?php include 'inc/accreditations.php';?>
@@ -133,3 +105,4 @@ role="dialog" aria-labelledby="modal-label" aria-hidden="true">
 <script type="text/javascript" src="//cdn.callrail.com/companies/251039821/d6ffaf4764e4c65a31e6/12/swap.js"></script>
 </body>
 <?php include 'inc/footer.php';?>
+</html>

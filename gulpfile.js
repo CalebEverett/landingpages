@@ -28,7 +28,7 @@ var env,
     hubspotFile = 'cccland', //used for .html file and for hubspot folders
     phpSources;
 
-env = 'development';
+env = 'production';
 
 if (env==='development') {
   outputDir = 'builds/development/';
