@@ -24,17 +24,18 @@
       }
     });
   </script>
-  <?php include 'inc/tagmanager.php';?> 
+  <?php include 'inc/tagmanager.php';?>
 <header>
   <article class="fullheight gibillhero">
     <div class="introcta">
       <p class="introtext">Scroll Down <br class="showSmall">to Learn More</p>
       <a href="#contenttop" ><svg id="handarrow"><?php include 'svg/arrow.svg';?></a>
     </div>
-    <div class="titletext left">
+    <div class="titletext left bottom">
       <h1>Next Stop...</h1>
       <h2>Career Training</h2>
     </div>
+    <div class="militaryfriendly"></div>
   </article>
 <?php include 'inc/nav.php';?>
 </header>

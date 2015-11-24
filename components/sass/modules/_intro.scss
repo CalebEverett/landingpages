@@ -1,5 +1,5 @@
 header {
-    
+
     .mastudent {
         @include backImage('../images/mahero.jpg');
     }
@@ -21,9 +21,9 @@ header {
     }
 
     .gibillhero {
-        @include backImageTop('../images/gibillhero.jpg');
+        @include backImageTop('../images/gibillhero2.jpg');
     }
-  
+
 
     .fullheight {
         @inlcude clearfix;
@@ -63,7 +63,7 @@ header {
                 fill: $orange;
                 padding-top: 10px;
 
-                
+
             }//handarrow
 
         }//introcta
@@ -84,7 +84,7 @@ header {
             @include flex-direction(column);
             //@include justify-content(flex-start);
             @include flex-grow(1);
-            
+
 
         }
 
@@ -99,7 +99,7 @@ header {
             @include breakpoint($medium){
             font-size: 2.5em;
             }
-            
+
 
             } //h1
 
@@ -121,6 +121,12 @@ header {
         .left {
             @include breakpoint($small) {
                 @include align-items(flex-start);
+            }
+        }
+
+        .bottom {
+            @include breakpoint($small) {
+                @include justify-content(flex-end);
             }
         }
 
